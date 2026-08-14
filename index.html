@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蓝鲸GEO</title>
+  </head>
+  <body>
+    <div class="loader-container">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        :root {
+          /* 颜色 */
+          --primary-color: #005eec;
+        }
+        .show-loader-container {
+          animation: show-loading-container 0.2s ease-in-out forwards;
+        }
+        .app-loading-container {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          flex-direction: column;
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        @keyframes show-loading-container {
+          0% {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .loader {
+          width: 50px;
+          aspect-ratio: 1.154;
+          position: relative;
+          background: conic-gradient(
+            from 120deg at 50% 64%,
+            #0000,
+            var(--primary-color) 1deg 120deg,
+            #0000 121deg
+          );
+          animation: l27-0 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+        }
+
+        .loader:before,
+        .loader:after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: inherit;
+          transform-origin: 50% 66%;
+          animation: l27-1 1.5s infinite;
+        }
+
+        .loader:after {
+          --s: -1;
+        }
+
+        @keyframes l27-0 {
+          0%,
+          30% {
+            transform: rotate(0);
+          }
+
+          70% {
+            transform: rotate(120deg);
+          }
+
+          70.01%,
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes l27-1 {
+          0% {
+            transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+          }
+
+          30%,
+          70% {
+            transform: rotate(calc(var(--s, 1) * 120deg))
+              translate(calc(var(--s, 1) * -5px), 10px);
+          }
+
+          100% {
+            transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+          }
+        }
+
+        .loading-text {
+          margin-top: 20px;
+          font-size: 16px;
+          font-size: 14px;
+          color: #8d8d8d;
+          margin-top: 30px;
+        }
+      </style>
+      <div class="app-loading-container">
+        <div class="container">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+    <div id="app">
+      <script>
+        setTimeout(() => {
+          if (!document.querySelector(".layout")) {
+            const element = document.querySelector(".app-loading-container");
+            if (element) {
+              document
+                .getElementById("app")
+                .appendChild(document.querySelector(".app-loading-container"));
+              element.classList.add("show-loader-container");
+            }
+          }
+        }, 500);
+      </script>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 防止富文本组件修改body样式 */
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 消除默认样式 */
+img,
+svg,
+video,
+canvas {
+  display: block;
+  vertical-align: middle; /* 或者只选其一 */
+}
+
+/* 隐藏滚动条 */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* 兼容 */
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+/* 滚动条轨道 */
+*::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* 滚动条滑块 */
+*::-webkit-scrollbar-thumb {
+  background-color: #dedede;
+  border-radius: 10px;
+}
+
+/* 鼠标悬停时滑块颜色 */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #9d9d9d;
+}
+
+/* 文本抗锯齿 */
+.antialiased {
+  -webkit-font-smoothing: antialiased; /* WebKit 浏览器 */
+  -moz-osx-font-smoothing: grayscale; /* Firefox（macOS） */
+  font-smoothing: antialiased; /* 标准属性（实验性） */
+}
+
+/* 地图标记点信息弹窗样式 */
+.mapBaseInfoWindow {
+  font-size: 12px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px 0 rgba(114, 124, 245, 0.17);
+  white-space: nowrap;
+}
+
+/* 垂直全屏布局(依赖定位)  */
+.vertical-layout {
+  position: absolute;
+  inset: 0;
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: column;
+}
+
+/** 全屏布局(依赖定位)  */
+.full-layout {
+  position: absolute;
+  inset: 0;
+}
+
+/* 表单字段描述文字样式 */
+.form-item-desc {
+  font-size: 12px;
+  color: #909399;
+  margin-top: 8px;
+  line-height: 1.5;
+  display: flex;
+}
+
+/* 水平k/v展示类型列表 */
+.inline-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.inline-container .item {
+  display: flex;
+  margin-right: 15px;
+}
+.inline-container .split {
+  position: relative;
+  padding-right: 15px;
+}
+.inline-container .split::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 70%;
+  background-color: #cfcfcf;
+}
+.inline-container .item .k {
+  color: #606266;
+}
+.inline-container .item .v {
+  display: flex;
+  margin-left: 10px;
+  color: #1a2434;
+}
+
+/* 底部分页组件容器，默认展示在右侧 */
+.footer-pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+/* 小号链接/文本：统一 12px（表格内 el-link 等场景） */
+.link-sm,
+.link-sm .el-link__inner {
+  font-size: 12px;
+}
+
+/* 状态文本组件（会在文本左侧展示一个圆点），类型主要对应相应的主题变量 */
+.status-text-primary {
+  color: var(--el-color-primary);
+  display: flex;
+  position: relative;
+}
+.status-text-primary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 30px;
+  transform: translateY(-50%);
+  background-color: var(--el-color-primary);
+}
+.status-text-warning {
+  color: var(--el-color-warning);
+  display: flex;
+  position: relative;
+}
+.status-text-warning::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 30px;
+  transform: translateY(-50%);
+  background-color: var(--el-color-warning);
+}
+.status-text-info {
+  color: var(--el-color-info);
+  display: flex;
+  position: relative;
+}
+.status-text-info::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 30px;
+  transform: translateY(-50%);
+  background-color: var(--el-color-info);
+}
+.status-text-success {
+  color: var(--el-color-success);
+  display: flex;
+  position: relative;
+}
+.status-text-success::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 30px;
+  transform: translateY(-50%);
+  background-color: var(--el-color-success);
+}
+.status-text-danger {
+  color: var(--el-color-danger);
+  display: flex;
+  position: relative;
+}
+.status-text-danger::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 30px;
+  transform: translateY(-50%);
+  background-color: var(--el-color-danger);
+}
+
+/* 按钮点击效果 */
+.click-active {
+  transition: all 0.2s;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.click-active:hover {
+  opacity: 0.8;
+}
+.click-active:active {
+  transform: scale(0.95);
+  opacity: 0.6;
+}
+
+/* 按钮导航效果 */
+.nav-btn-class {
+  transition: all 0.2s;
+  white-space: nowrap;
+  color: var(--el-color-primary);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+.nav-btn-class:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.nav-btn-class:active {
+  opacity: 0.6;
+}
+
+/* 淡入动画效果 */
+.animation-show {
+  animation: animation-show 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes animation-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 全局进度条样式 */
+#nprogress .bar {
+  background: var(--el-color-primary) !important;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--el-color-primary), 0 0 5px var(--el-color-primary) !important;
+}

@@ -1,0 +1,15 @@
+:root {
+  // 默认字体颜色
+  color: #1a2434;
+  // 默认字体大小
+  font-size: 14px;
+  // 主要布局容器背景颜色
+  --layout-container-bg-color: #0f1626;
+  // 布局卡片容器背景颜色
+  --layout-card-container-bg-color: #fff;
+  // 主题布局背景颜色
+  --layout-main-bg-color: #f6f8fa;
+  // f9fafc
+  // 元素圆角基础值
+  --el-border-radius-base: 8px !important;
+}

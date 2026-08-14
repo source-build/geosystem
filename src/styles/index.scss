@@ -1,0 +1,87 @@
+@use "./variables.scss";
+@use "./transition.scss";
+
+// 通用卡片样式
+.card {
+  background-color: var(--layout-card-container-bg-color);
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: auto;
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+}
+
+.container-head {
+  display: flex;
+}
+.container-head-column {
+  flex: 1;
+}
+.container-label {
+  font-size: 17px;
+  color: #303030;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.container-label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -10px;
+  width: 4px;
+  height: 62%;
+  background-color: var(--el-color-primary);
+  border-radius: 10px;
+}
+.container-label-warning {
+  &::after {
+    content: "";
+    background-color: #f2711c;
+  }
+}
+
+// 表格页面布局类名(表格高度自适应)
+.page-table-layout {
+  .main {
+    flex: 1;
+    display: flex;
+    position: relative;
+    .content {
+      position: absolute;
+      inset: 0;
+      background-color: var(--layout-card-container-bg-color);
+      border-radius: 8px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      .release-title {
+        color: var(--el-color-primary);
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+}
+
+// 行内表单，通常用于筛选容器
+.inline-form {
+  background-color: var(--layout-card-container-bg-color);
+  border-radius: 8px;
+  padding: 0 15px;
+  padding-top: 13px;
+
+  .el-form-item {
+    margin-bottom: 13px;
+  }
+
+  .el-form--inline .el-form-item{
+    margin-right: 20px;
+  }
+}

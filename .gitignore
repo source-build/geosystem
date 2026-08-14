@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+.vscode
+.claude
+.idea
+.kilo
+
+yarn.lock
+pnpm-lock.yaml
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# build artifacts
+tsconfig.tsbuildinfo
+
+# 采集脚本与HAR（含真实凭证，勿公开）
+data/
+scripts/capture_mock.py
+.DS_Store

@@ -1,0 +1,88 @@
+$border-color: #ebeef5;
+
+$--menu: (
+  "hover-bg-color": #1f1f2f,
+  "item-height": 50px,
+  "base-level-padding": 20px,
+  "text-color": #dedede,
+  "bg-color": #0f1626,
+  "active-color": #fff,
+);
+
+$--table: (
+  "header-bg-color": #fafafa,
+  "header-text-color": #323335,
+  "border-color": $border-color,
+  "border": 1px solid #ebeef5,
+);
+
+$--dialog: (
+  "border-radius": 14px,
+);
+
+$--messagebox: (
+  "border-radius": 14px,
+);
+
+/* 只重写需要的变量 */
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    'white': #ffffff,
+    'black': #000000,
+    "primary": (
+      "base": #005eec,
+    ),
+    "success": (
+      "base": #21ba45,
+    ),
+    "warning": (
+      "base": #eb4808,
+    ),
+    "danger": (
+      "base": #db2828,
+    ),
+    "error": (
+      "base": #db2828,
+    ),
+    "info": (
+      "base": #909399,
+    ),
+  ),
+  $menu: $--menu,
+  $table: $--table,
+  $dialog: $--dialog,
+  $messagebox: $--messagebox
+);
+
+.el-table__header {
+  border-top: 1px solid #ebeef5;
+}
+
+.el-form-item__label {
+  font-weight: 500;
+}
+
+.el-tabs__nav-wrap::after {
+  height: 1px;
+}
+
+.el-menu-item.is-active {
+  font-weight: bold;
+  background-color: #151d31;
+  position: relative;
+}
+
+.el-menu-item {
+  user-select: none;
+}
+
+.el-menu,
+.el-sub-menu__title {
+  user-select: none;
+  border-right: none !important;
+}
+
+.el-page-header__header {
+  margin-left: 10px;
+  padding-right: 15px;
+}
