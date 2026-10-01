@@ -33,8 +33,10 @@ pnpm-lock.yaml
 
 # build artifacts
 tsconfig.tsbuildinfo
+__pycache__/
+*.pyc
 
 # 采集脚本与HAR（含真实凭证，勿公开）
 data/
-scripts/capture_mock.py
+scripts/capture_mock*.py
 .DS_Store

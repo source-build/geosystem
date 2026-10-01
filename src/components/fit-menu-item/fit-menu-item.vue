@@ -23,6 +23,7 @@
           />
         </div>
         <span v-text="item.name" style="font-weight: 400" />
+        <span v-if="isLocked(item)" class="edition-badge">完整版</span>
       </template>
       <fit-menu-item
         :data="item.children"
@@ -51,7 +52,8 @@
         />
       </div>
       <template #title>
-        <span style="font-weight: 400">{{ item.name }}</span>
+        <span class="menu-title-text">{{ item.name }}</span>
+        <span v-if="isLocked(item)" class="edition-badge">完整版</span>
       </template>
     </el-menu-item>
   </template>
@@ -82,6 +84,12 @@ const props = defineProps({
     default: "linear-gradient",
   },
 });
+
+const isLocked = (item: any): boolean => {
+  if (item.locked) return true;
+  const visibleChildren = (item.children || []).filter((child: any) => child.show == 1);
+  return visibleChildren.length > 0 && visibleChildren.every((child: any) => isLocked(child));
+};
 
 const menuItemClass = computed(() => {
   let className = "menu-item-active";
@@ -163,6 +171,20 @@ const isChildActive = (menuItem: any): boolean => {
 };
 </script>
 <style lang="scss" scoped>
+.menu-title-text { min-width: 0; overflow: hidden; font-weight: 400; text-overflow: ellipsis; }
+.edition-badge {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin-left: auto;
+  padding: 2px 5px;
+  border: 1px solid rgba(247, 228, 121, 0.28);
+  border-radius: 8px;
+  color: #f7e479;
+  background: rgba(247, 228, 121, 0.08);
+  font-size: 9px;
+  line-height: 1.2;
+}
 .url_icon {
   margin-right: 5px;
   display: flex;

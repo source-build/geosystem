@@ -18,6 +18,71 @@ for (const [file, mod] of Object.entries(modules)) {
   dataFiles[stem] = (mod as any).default;
 }
 
+/** 公开体验版不展示的正式后台菜单，以及它们的全部子菜单。 */
+const HIDDEN_DEMO_MENU_IDS = new Set([
+  66, 67, 69, 70, 77, 78, 79, 123, 124, 125,
+  71, 72, 73, 74, 81, 82, 102, 107, 126,
+]);
+
+/** AI 建站菜单由体验版本地视图提供，不依赖正式菜单快照是否已同步。 */
+const SITEBUILDER_DEMO_MENUS = [
+  {
+    id: 9001,
+    number: 3700,
+    name: "AI建站",
+    short_name: "建站",
+    icon_type: 1,
+    icon: "m-app",
+    type: 1,
+    show: 1,
+    cache: 1,
+    status: 1,
+    parent_id: 0,
+  },
+  {
+    id: 9002,
+    number: 10,
+    name: "我的站点",
+    addr: "/biz/sitebuilder/projects",
+    route_name: "sitebuilderProjects",
+    path: "/src/views/biz/sitebuilder/projects/index.vue",
+    icon_type: 1,
+    icon: "m-app",
+    type: 2,
+    show: 1,
+    cache: 2,
+    status: 1,
+    parent_id: 9001,
+  },
+  {
+    id: 9003,
+    number: 9,
+    name: "模板广场",
+    addr: "/biz/sitebuilder/templates",
+    route_name: "sitebuilderTemplates",
+    path: "/src/views/biz/sitebuilder/templates/index.vue",
+    icon_type: 1,
+    icon: "m-gallery",
+    type: 2,
+    show: 1,
+    cache: 2,
+    status: 1,
+    parent_id: 9001,
+  },
+];
+
+function resolveUserMenuMock(response: any) {
+  const cloned = JSON.parse(JSON.stringify(response));
+  const rows = Array.isArray(cloned?.result) ? cloned.result : [];
+  const visibleRows = rows.filter((item: any) => !HIDDEN_DEMO_MENU_IDS.has(Number(item.id)));
+  const existingIds = new Set(visibleRows.map((item: any) => Number(item.id)));
+  cloned.result = [
+    ...visibleRows,
+    ...SITEBUILDER_DEMO_MENUS.filter((item) => !existingIds.has(item.id)),
+  ];
+  return cloned;
+}
+
 /** 接口路径（GET，不含查询参数）=> 数据文件名 */
 const PATH_FILE_MAP: Record<string, string> = {
   // ---- 启动必需 ----
@@ -107,7 +172,10 @@ export function resolveMock(method: string, path: string): any | undefined {
 
   if (m === "GET") {
     if (PATH_FILE_MAP[clean] && dataFiles[PATH_FILE_MAP[clean]]) {
-      return dataFiles[PATH_FILE_MAP[clean]];
+      const response = dataFiles[PATH_FILE_MAP[clean]];
+      return clean === "/system/system-menu/user-menus"
+        ? resolveUserMenuMock(response)
+        : response;
     }
     for (const [pattern, stem] of DYNAMIC_MATCHERS) {
       if (pattern.test(clean) && dataFiles[stem]) {

@@ -1,925 +1,426 @@
 <template>
-  <div
-    class="full-layout dashboard font-inter antialiased"
-    style="overflow-y: auto"
-  >
-    <div class="dashboard-layout grid grid-cols-1 lg:grid-cols-3 gap-20 mb-8">
-      <div class="main lg:col-span-2">
-        <!-- 数据概览卡片 -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-20 mb-20"
-        >
-          <!-- 销售额卡片-1 -->
-          <div
-            class="bg-card-bg rounded-14 p-20 card-shadow card-hover"
-            style="animation-delay: 0.3s"
-          >
-            <div class="flex items-center justify-between mb-20">
-              <div>
-                <h3 class="text-text-muted font-medium text-16">本月销售额</h3>
-                <p class="text-14 text-success flex items-center mt-4">
-                  <f-svg-icon name="fa-arrow-up" size="13" color="#10b981" />
-                  <span id="sales-growth">12.5%</span>
-                  <span class="text-text-muted ml-4">vs 上月</span>
-                </p>
-              </div>
-              <div
-                class="bg-primary/10 text-primary rounded-50 p-12 w-45 h-45 flex items-center justify-center"
-              >
-                <f-svg-icon
-                  name="salesVolume"
-                  size="20"
-                  color="var(--el-color-primary)"
-                />
-              </div>
-            </div>
-            <div class="flex items-end justify-between">
-              <div>
-                <p class="text-28 font-bold animate-value" id="sales-value">
-                  <count-to
-                    :startVal="0"
-                    :endVal="56892"
-                    :duration="1000"
-                    :useEasing="false"
-                    :decimals="2"
-                  />
-                </p>
-                <p class="text-14 text-text-muted mt-1">
-                  较去年同期
-                  <span class="text-success font-medium">+18.2%</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 订单量卡片 -->
-          <div
-            class="bg-card-bg rounded-14 p-20 card-shadow card-hover"
-            style="animation-delay: 0.3s"
-          >
-            <div class="flex items-center justify-between mb-20">
-              <div>
-                <h3 class="text-text-muted font-medium text-16">服务订单量</h3>
-                <p class="text-14 text-success flex items-center mt-4">
-                  <f-svg-icon name="fa-arrow-up" size="13" color="#10b981" />
-                  <span id="sales-growth">12.5%</span>
-                  <span class="text-text-muted ml-4">vs 上月</span>
-                </p>
-              </div>
-              <div
-                class="bg-secondary/10 text-secondary rounded-50 p-12 w-45 h-45 flex items-center justify-center"
-              >
-                <f-svg-icon
-                  name="order"
-                  size="20"
-                  color="var(--el-color-success)"
-                />
-              </div>
-            </div>
-            <div class="flex items-end justify-between">
-              <div>
-                <p class="text-28 font-bold animate-value" id="sales-value">
-                  <count-to
-                    :startVal="0"
-                    :endVal="4523"
-                    :duration="1000"
-                    :useEasing="false"
-                  />
-                </p>
-                <p class="text-14 text-text-muted mt-1">
-                  日均 <span class="font-medium">275</span> 单
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 陪诊师数量卡片 -->
-          <div
-            class="bg-card-bg rounded-14 p-20 card-shadow card-hover"
-            style="animation-delay: 0.3s"
-          >
-            <div class="flex items-center justify-between mb-20">
-              <div>
-                <h3 class="text-text-muted font-medium text-16">陪诊师数量</h3>
-                <p class="text-14 text-success flex items-center mt-4">
-                  <f-svg-icon name="fa-arrow-up" size="13" color="#10b981" />
-                  <span id="sales-growth">15.2%</span>
-                  <span class="text-text-muted ml-4">vs 上月</span>
-                </p>
-              </div>
-              <div
-                class="bg-warning/10 text-warning rounded-50 p-12 w-45 h-45 flex items-center justify-center"
-              >
-                <f-svg-icon
-                  name="user-fill"
-                  size="20"
-                  color="var(--el-color-warning)"
-                />
-              </div>
-            </div>
-            <div class="flex items-end justify-between">
-              <div>
-                <p class="text-28 font-bold animate-value" id="sales-value">
-                  <count-to
-                    :startVal="0"
-                    :endVal="189"
-                    :duration="1000"
-                    :useEasing="false"
-                  />
-                </p>
-                <p class="text-14 text-text-muted mt-1">
-                  本月新增 <span class="font-medium">24</span> 位
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 用户数量卡片 -->
-          <div
-            class="bg-card-bg rounded-14 p-20 card-shadow card-hover"
-            style="animation-delay: 0.3s"
-          >
-            <div class="flex items-center justify-between mb-20">
-              <div>
-                <h3 class="text-text-muted font-medium text-16">注册用户数</h3>
-                <p class="text-14 text-success flex items-center mt-4">
-                  <f-svg-icon name="fa-arrow-up" size="13" color="#10b981" />
-                  <span id="sales-growth">23.8%</span>
-                  <span class="text-text-muted ml-4">vs 上月</span>
-                </p>
-              </div>
-              <div
-                class="bg-danger/10 text-danger rounded-50 p-12 w-45 h-45 flex items-center justify-center"
-              >
-                <f-svg-icon
-                  name="user-fill"
-                  size="20"
-                  color="var(--el-color-warning)"
-                />
-              </div>
-            </div>
-            <div class="flex items-end justify-between">
-              <div>
-                <p class="text-28 font-bold animate-value" id="sales-value">
-                  <count-to
-                    :startVal="0"
-                    :endVal="452300"
-                    :duration="1000"
-                    :useEasing="false"
-                  />
-                </p>
-                <p class="text-14 text-text-muted mt-1">
-                  活跃用户 <span class="font-medium">68.5%</span>
-                </p>
-              </div>
-            </div>
-          </div>
+  <div class="geo-dashboard">
+    <section class="dashboard-hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <el-icon><View /></el-icon>
+          {{ DEMO_CONFIG.dashboard.badge }}
         </div>
-        <!-- 主要图表区域 -->
-        <div class="grid grid-cols-1 gap-y-20 2xl:grid-cols-3 2xl:gap-20 mb-20">
-          <!-- 趋势图卡片 -->
-          <div
-            class="bg-card-bg rounded-14 p-24 card-shadow lg:col-span-2 card-hover"
-            style="animation-delay: 0.7s"
-          >
-            <div class="flex items-center justify-between mb-24">
-              <h3 class="text-18 font-semibold">业务趋势分析</h3>
-              <div class="flex space-x-8">
-                <button
-                  class="px-12 py-4 text-14 rounded-8 text-white"
-                  style="background-color: var(--el-color-primary);"
-                >
-                  周
-                </button>
-                <button
-                  class="px-12 py-4 text-14 rounded-8 bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-                >
-                  月
-                </button>
-                <button
-                  class="px-12 py-4 text-14 rounded-8 bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-                >
-                  年
-                </button>
-              </div>
-            </div>
-            <div id="trendChart" class="chart-container"></div>
-          </div>
-          <!-- 订单日程卡片 -->
-          <div
-            class="bg-card-bg rounded-14 p-24 card-shadow card-hover"
-            style="animation-delay: 0.8s"
-          >
-            <div class="flex items-center justify-between mb-20">
-              <h3 class="text-18 font-semibold">服务订单日程</h3>
-              <button class="text-gray-400 hover:text-gray-600">
-                <i class="fa fa-ellipsis-v"></i>
-              </button>
-            </div>
-            <div class="chart-container">
-              <div class="w-full h-full" style="position: relative">
-                <div style="position: absolute; inset: 0; overflow-y: auto">
-                  <el-calendar
-                    v-model="calendarValue"
-                    v-loading="calendarLoading"
-                  >
-                    <template #date-cell="{ data }">
-                      <div class="date-item">
-                        <span class="title">{{ data.day.split("-")[2] }}</span>
-                        <span
-                          class="amount flex items-end"
-                          v-if="data.day.split('-')[2] == 8"
-                          >132单</span
-                        >
-                      </div>
-                    </template>
-                  </el-calendar>
-                </div>
-              </div>
-            </div>
-          </div>
+        <h1>{{ DEMO_CONFIG.dashboard.title }}</h1>
+        <p>{{ DEMO_CONFIG.dashboard.description }}</p>
+        <div class="hero-actions">
+          <el-button type="primary" size="large" @click="goDiagnosis">
+            <el-icon><Aim /></el-icon>{{ DEMO_CONFIG.cta.startDiagnosis }}
+          </el-button>
+          <el-button size="large" @click="goReports">
+            {{ DEMO_CONFIG.cta.viewReports }}<el-icon class="ml-6"><ArrowRight /></el-icon>
+          </el-button>
         </div>
-        <!-- 开通城市图卡片 -->
-        <div
-          class="bg-card-bg rounded-14 p-24 card-shadow card-hover fade-in mb-20"
-          style="animation-delay: 0.8s"
-        >
-          <div class="flex items-center justify-between mb-24">
-            <h3 class="text-18 font-semibold">服务覆盖城市</h3>
-            <button class="text-gray-400 hover:text-gray-600">
-              <i class="fa fa-ellipsis-v"></i>
-            </button>
-          </div>
-          <div class="h-450">
-            <div
-              id="cityChart"
-              class="w-full h-full"
-              style="background-color: #f6f6f6"
-            ></div>
-          </div>
+        <div class="experience-path" aria-label="体验路径">
+          <template v-for="(step, index) in DEMO_CONFIG.experienceSteps" :key="step">
+            <span>{{ index + 1 }}</span><strong>{{ step }}</strong>
+            <el-icon v-if="index < DEMO_CONFIG.experienceSteps.length - 1"><Right /></el-icon>
+          </template>
         </div>
-        <!-- 最新订单 -->
-        <!-- <div
-          class="bg-card-bg rounded-14 p-24 card-shadow card-hover fade-in mb-20"
-          style="animation-delay: 0.8s"
-        >
-          <div class="flex items-center justify-between mb-24">
-            <h3 class="text-18 font-semibold">最新订单</h3>
-            <button class="text-gray-400 hover:text-gray-600">
-              <i class="fa fa-ellipsis-v"></i>
-            </button>
-          </div>
-          <div class="h-350">
-            <div
-              id="cityChart"
-              class="w-full h-full"
-              style="background-color: #f6f6f6"
-            ></div>
-          </div>
-        </div> -->
       </div>
-      <div class="right flex flex-col gap-y-20">
-        <!-- 系统通知 -->
-        <div
-          class="bg-card-bg rounded-14 p-20 card-shadow lg:col-span-2 card-hover fade-in"
-          style="animation-delay: 0.1s"
-        >
-          <div class="flex items-center justify-between mb-24">
-            <h3 class="text-18 font-semibold">
-              系统通知
-              <span class="text-14 ml-8" style="color: var(--el-color-primary);">(4条未读)</span>
-            </h3>
-            <button class="hover:text-primary/80 text-14" style="color: var(--el-color-primary);">
-              全部标为已读
-            </button>
-          </div>
-          <div class="space-y-10 max-h-250 overflow-y-auto scrollbar-hide">
-            <div
-              class="flex items-start p-10 bg-primary/5 rounded-8 border-l-4 border-primary"
-            >
-              <div class="flex-shrink-0 pt-2">
-                <el-icon color="#3b82f6">
-                  <CircleCheckFilled />
-                </el-icon>
-              </div>
-              <div class="ml-12">
-                <p class="text-14 font-medium" style="color: #1e293b">
-                  系统更新通知
-                </p>
-                <p class="text-13 text-text-muted mt-5">
-                  系统将于本周日凌晨2点进行维护，请提前做好准备
-                </p>
-                <p class="text-12 text-text-muted mt-5">2025-06-28 10:30</p>
-              </div>
-            </div>
-            <div
-              class="flex items-start p-10 bg-secondary/5 rounded-8 border-l-4 border-secondary"
-            >
-              <div class="flex-shrink-0 pt-2">
-                <el-icon color="#10b981">
-                  <CircleCheckFilled />
-                </el-icon>
-              </div>
-              <div class="ml-12">
-                <p class="text-14 font-medium" style="color: #1e293b">
-                  陪诊师认证成功
-                </p>
-                <p class="text-13 text-text-muted mt-5">
-                  李医生（ID: 10086）的认证申请已通过审核
-                </p>
-                <p class="text-12 text-text-muted mt-5">2025-06-28 10:30</p>
-              </div>
-            </div>
-            <div
-              class="flex items-start p-10 bg-warning/5 rounded-8 border-l-4 border-warning"
-            >
-              <div class="flex-shrink-0 pt-2">
-                <el-icon color="#f59e0b">
-                  <CircleCheckFilled />
-                </el-icon>
-              </div>
-              <div class="ml-12">
-                <p class="text-14 font-medium" style="color: #1e293b">
-                  服务异常提醒
-                </p>
-                <p class="text-13 text-text-muted mt-5">
-                  今日在线问诊服务响应时间较长，请关注系统负载
-                </p>
-                <p class="text-12 text-text-muted mt-5">2025-06-28 10:30</p>
-              </div>
-            </div>
-            <div
-              class="flex items-start p-10 bg-danger/5 rounded-8 border-l-4 border-danger"
-            >
-              <div class="flex-shrink-0 pt-2">
-                <el-icon color="#ef4444">
-                  <CircleCheckFilled />
-                </el-icon>
-              </div>
-              <div class="ml-12">
-                <p class="text-14 font-medium" style="color: #1e293b">
-                  订单退款通知
-                </p>
-                <p class="text-13 text-text-muted mt-5">
-                  订单#10012已全额退款，原因：用户取消服务
-                </p>
-                <p class="text-12 text-text-muted mt-5">2025-06-28 10:30</p>
-              </div>
-            </div>
-          </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="signal-orbit signal-orbit--outer"></div>
+        <div class="signal-orbit signal-orbit--inner"></div>
+        <div class="signal-core">
+          <img src="/logo.png" alt="" />
+          <strong>GEO</strong>
+          <span>AI Visibility</span>
         </div>
-        <!-- 待办事项 -->
         <div
-          class="bg-card-bg rounded-14 p-20 card-shadow card-hover fade-in"
-          style="animation-delay: 0.2s"
+          v-for="(platform, index) in heroPlatforms"
+          :key="platform.name"
+          class="signal-node"
+          :class="`signal-node--${index + 1}`"
         >
-          <div class="flex items-center justify-between mb-24">
-            <h3 class="text-18 font-semibold">
-              待办事项
-              <span class="text-14 ml-8" style="color: var(--el-color-primary)"
-                >(3项)</span
-              >
-            </h3>
-            <button
-              class="hover:text-primary/80 text-14"
-              style="color: var(--el-color-primary)"
-            >
-              新增
-            </button>
-          </div>
-          <div class="space-y-10 max-h-250 overflow-y-auto scrollbar-hide">
-            <div class="flex items-center p-12 bg-gray-50 rounded-8">
-              <input
-                type="checkbox"
-                class="h-14 w-14 focus:ring-primary border-gray-300 rounded"
-                style="color: var(--el-color-primary)"
-              />
-              <div class="ml-12">
-                <p class="text-14 font-medium">审核陪诊师申请 (5)</p>
-                <p class="text-12 text-text-muted mt-4">
-                  今日需完成5位医生的资质审核
-                </p>
-              </div>
-              <span
-                class="ml-auto px-8 py-4 text-12 font-medium bg-primary/10 text-primary rounded-30"
-              >
-                紧急
-              </span>
-            </div>
-            <div class="flex items-center p-12 bg-gray-50 rounded-8">
-              <input
-                type="checkbox"
-                class="h-14 w-14 text-warning focus:ring-warning border-gray-300 rounded"
-              />
-              <div class="ml-12">
-                <p class="text-14 font-medium">服务合同续签</p>
-                <p class="text-12 text-text-muted mt-4">
-                  与XX医院的合作协议即将到期
-                </p>
-              </div>
-              <span
-                class="ml-auto px-8 py-4 text-12 font-medium bg-warning/10 text-warning rounded-30"
-              >
-                即将到期
-              </span>
-            </div>
-            <div class="flex items-center p-12 bg-gray-50 rounded-8">
-              <input
-                type="checkbox"
-                class="h-14 w-14 text-primary focus:ring-primary border-gray-300 rounded"
-              />
-              <div class="ml-12">
-                <p class="text-14 font-medium">系统数据备份</p>
-                <p class="text-12 text-text-muted mt-4">
-                  执行每周数据全量备份任务
-                </p>
-              </div>
-              <span
-                class="ml-auto px-8 py-4 text-12 font-medium bg-gray-100 text-gray-700 rounded-30"
-              >
-                常规
-              </span>
-            </div>
-            <div class="flex items-center p-12 bg-gray-50 rounded-8">
-              <input
-                type="checkbox"
-                class="h-14 w-14 text-primary focus:ring-primary border-gray-300 rounded"
-              />
-              <div class="ml-12">
-                <p class="text-14 font-medium line-through text-text-muted">
-                  月度财务报表
-                </p>
-                <p class="text-12 text-text-muted mt-1">
-                  已提交5月份财务报表至总公司
-                </p>
-              </div>
-              <span
-                class="ml-auto px-8 py-4 text-12 font-medium bg-success/10 text-success rounded-30"
-              >
-                已完成
-              </span>
-            </div>
-          </div>
+          <img :src="platform.icon" alt="" />
         </div>
-        <!-- 服务器状态卡片 -->
-        <div
-          class="bg-card-bg rounded-14 p-20 card-shadow mb-8 fade-in"
-          style="animation-delay: 1.1s"
-        >
-          <div class="flex items-center justify-between mb-20">
-            <h3 class="text-18 font-semibold">系统资源监控</h3>
-            <div class="flex items-center">
-              <span
-                class="inline-flex items-center justify-center w-12 h-12 rounded-30 bg-success mr-2 pulse-animation"
-              ></span>
-              <span class="text-14 text-success">系统正常运行中</span>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-1 gap-25">
-            <div class="bg-gray-50 rounded-8 p-12">
-              <div class="flex items-center justify-between mb-8">
-                <h4 class="text-14 font-medium text-text-muted">CPU使用率</h4>
-                <span class="text-14 font-medium">32%</span>
-              </div>
-              <div class="w-full bg-gray-200 rounded-30 h-10">
-                <div
-                  class="bg-primary h-10 rounded-30"
-                  style="width: 32%"
-                ></div>
-              </div>
-            </div>
-            <div class="bg-gray-50 rounded-8 p-12">
-              <div class="flex items-center justify-between mb-8">
-                <h4 class="text-14 font-medium text-text-muted">内存使用率</h4>
-                <span class="text-14 font-medium">48%</span>
-              </div>
-              <div class="w-full bg-gray-200 rounded-30 h-10">
-                <div
-                  class="bg-secondary h-10 rounded-30"
-                  style="width: 48%"
-                ></div>
-              </div>
-            </div>
-            <div class="bg-gray-50 rounded-8 p-12">
-              <div class="flex items-center justify-between mb-8">
-                <h4 class="text-14 font-medium text-text-muted">磁盘使用率</h4>
-                <span class="text-14 font-medium">65%</span>
-              </div>
-              <div class="w-full bg-gray-200 rounded-30 h-10">
-                <div
-                  class="bg-warning h-10 rounded-30"
-                  style="width: 65%"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 服务类型统计 -->
-        <!-- <div
-          class="bg-card-bg rounded-14 p-24 card-shadow card-hover fade-in"
-          style="animation-delay: 0.8s"
-        >
-          <div class="flex items-center justify-between mb-20">
-            <h3 class="text-18 font-semibold">服务类型统计</h3>
-            <button class="text-gray-400 hover:text-gray-600">
-              <i class="fa fa-ellipsis-v"></i>
-            </button>
-          </div>
-          <div class="chart-container">
-            <div id="cityChart1" class="w-full h-full" style="background-color: #f6f6f6;"></div>
-          </div>
-        </div> -->
       </div>
+    </section>
+
+    <div class="demo-note">
+      <el-icon><InfoFilled /></el-icon>
+      <span>{{ DEMO_CONFIG.dashboard.demoNote }}</span>
     </div>
+
+    <el-skeleton v-if="loading" :rows="8" animated class="dashboard-loading" />
+
+    <template v-else>
+      <el-alert
+        v-if="loadError"
+        class="dashboard-alert"
+        type="warning"
+        :closable="false"
+        show-icon
+        title="部分 GEO 数据暂时未能加载"
+      >
+        <template #default>
+          <span>你仍可继续体验诊断功能，或</span>
+          <el-button link type="primary" @click="loadDashboard">重新加载</el-button>
+        </template>
+      </el-alert>
+
+      <section class="metric-grid" aria-label="GEO 核心指标">
+        <GeoMetricCard
+          label="诊断报告"
+          :value="metrics.reportCount"
+          hint="已创建的品牌 AI 可见度报告"
+          icon="DocumentChecked"
+        />
+        <GeoMetricCard
+          label="平均品牌提及率"
+          :value="formatRate(metrics.averageMentionRate)"
+          unit="%"
+          hint="所有有效报告的平均表现"
+          icon="TrendCharts"
+          tone="success"
+        />
+        <GeoMetricCard
+          label="覆盖 AI 平台"
+          :value="metrics.platformCount"
+          unit="个"
+          hint="已纳入诊断的平台数量"
+          icon="Connection"
+          tone="info"
+        />
+        <GeoMetricCard
+          label="识别竞争品牌"
+          :value="metrics.competitorCount"
+          unit="个"
+          hint="报告中出现的竞争品牌去重统计"
+          icon="Histogram"
+          tone="warning"
+        />
+      </section>
+
+      <div class="dashboard-grid dashboard-grid--primary">
+        <PlatformOverview
+          :platforms="platformMetrics"
+          @view-reports="goReports"
+          @start-diagnosis="goDiagnosis"
+        />
+        <InsightPanel
+          :brand="latestInsight.brand"
+          :findings="latestInsight.findings"
+          :priorities="latestInsight.priorities"
+          @view-report="openLatestReport"
+          @start-diagnosis="goDiagnosis"
+        />
+      </div>
+
+      <div class="dashboard-grid dashboard-grid--secondary">
+        <RecentDiagnosis
+          :tasks="latestTasks"
+          @view-all="goReports"
+          @open-task="openTask"
+          @start-diagnosis="goDiagnosis"
+        />
+
+        <section class="dashboard-card full-edition-card">
+          <div>
+            <span class="card-eyebrow">GEO GROWTH LOOP</span>
+            <h2>从诊断走向持续增长</h2>
+            <p>完整版覆盖内容策略、AI 批量创作、知识库和多渠道发布，让诊断结论真正转化为品牌 AI 可见度。</p>
+          </div>
+          <div class="capability-list">
+            <div v-for="item in DEMO_CONFIG.fullEdition.capabilities" :key="item.title" class="capability-item">
+              <el-icon><component :is="item.icon" /></el-icon>
+              <span><strong>{{ item.title }}</strong><small>{{ item.description }}</small></span>
+            </div>
+          </div>
+          <el-button type="primary" plain class="edition-cta" @click="copyWechat">
+            {{ DEMO_CONFIG.cta.getFullEdition }}
+          </el-button>
+        </section>
+      </div>
+    </template>
   </div>
 </template>
-<script setup lang="ts">
-import * as echarts from "echarts";
-import AMapLoader from "@amap/amap-jsapi-loader";
-import { CountTo } from "vue3-count-to";
 
-// 业务趋势
-// echarts实例
-let businessTrendChartInstance: any = null;
-// 统计类型 0-近15日 1-近7天 2:近1个月 3:近一年
-const businessTrendChartType: any = ref(0);
-let businessTrendChartOption: { [key: string]: any } = {
-  tooltip: {
-    trigger: "axis",
-    axisPointer: {
-      lineStyle: {
-        color: {
-          type: "linear",
-          x: 0,
-          y: 0,
-          x2: 0,
-          y2: 1,
-          colorStops: [
-            {
-              offset: 0,
-              color: "rgba(0,49,236,0)",
-            },
-            {
-              offset: 0.5,
-              color: "rgba(255, 255, 255,1)",
-            },
-            {
-              offset: 1,
-              color: "rgba(0,49,236,0)",
-            },
-          ],
-          global: false,
-        },
-      },
-    },
-  },
-  grid: {
-    top: "10%",
-    left: "3%",
-    right: "3%",
-    bottom: "8%",
-  },
-  xAxis: [
-    {
-      type: "category",
-      axisLabel: {
-        color: "#A5B3CD",
-      },
-      splitLine: {
-        show: false,
-      },
-      axisLine: {
-        show: false,
-      },
-      axisTick: {
-        show: false,
-      },
-      boundaryGap: false,
-      data: [],
-    },
-  ],
-  yAxis: [
-    {
-      type: "value",
-      min: 0,
-      splitNumber: 4,
-      splitLine: {
-        show: false,
-        lineStyle: {
-          color: "rgba(255,255,255,0.1)",
-        },
-      },
-      axisLine: {
-        show: false,
-        lineStyle: {
-          color: "#9581F5",
-        },
-      },
-      axisLabel: {
-        show: false,
-      },
-      axisTick: {
-        show: false,
-      },
-    },
-  ],
-  series: [
-    // 近一年成交数量
-    {
-      type: "line",
-      smooth: true, //是否平滑
-      showAllSymbol: true,
-      symbol: "circle",
-      symbolSize: 15,
-      label: {
-        show: false,
-        position: "top",
-        color: "#005eec",
-      },
-      lineStyle: {
-        width: 3, // 折线宽度
-      },
-      itemStyle: {
-        color: "#005eec",
-        borderColor: "#fff",
-        borderWidth: 3,
-        shadowColor: "rgba(0, 0, 0, .0)",
-        shadowBlur: 0,
-        shadowOffsetY: 2,
-        shadowOffsetX: 2,
-      },
-      tooltip: {
-        show: true,
-      },
-      areaStyle: {
-        color: new echarts.graphic.LinearGradient(
-          0,
-          0,
-          0,
-          1,
-          [
-            {
-              offset: 0,
-              color: "rgba(0,103,236,0.2)",
-            },
-            {
-              offset: 1,
-              color: "rgba(0,103,251,0)",
-            },
-          ],
-          false
-        ),
-        shadowColor: "rgba(0,103,251,0.8)",
-        shadowBlur: 20,
-      },
-      // data: [332, 255, 407, 302, 453, 384, 456],
-    },
-    // 近一年成交金额
-    {
-      type: "line",
-      smooth: true, // 是否平滑
-      showAllSymbol: true,
-      symbol: "circle",
-      symbolSize: 15,
-      label: {
-        show: false,
-        position: "top",
-        color: "#ff4d4f",
-      },
-      lineStyle: {
-        width: 3, // 折线宽度
-        color: "#ff4d4f", // 线条颜色设为红色
-      },
-      itemStyle: {
-        color: "#ff4d4f", // 节点颜色设为红色
-        borderColor: "#fff",
-        borderWidth: 3,
-        shadowColor: "rgba(0, 0, 0, .0)",
-        shadowBlur: 0,
-        shadowOffsetY: 2,
-        shadowOffsetX: 2,
-      },
-      tooltip: {
-        show: true,
-      },
-      areaStyle: {
-        color: new echarts.graphic.LinearGradient(
-          0,
-          0,
-          0,
-          1,
-          [
-            {
-              offset: 0,
-              color: "rgba(255, 77, 79, 0.2)", // 红色渐变
-            },
-            {
-              offset: 1,
-              color: "rgba(255, 77, 79, 0)",
-            },
-          ],
-          false
-        ),
-        shadowColor: "rgba(255, 77, 79, 0.8)",
-        shadowBlur: 20,
-      },
-      // 初始数据为空，后续会填充
-      data: [],
-    },
-  ],
+<script setup lang="ts" name="dashboard">
+import { getDiagnoseReportList, queryLatestTaskList } from "@/api/biz/diagnosis";
+import { DEMO_CONFIG, copyText } from "@/config/demo";
+import deepseekIcon from "@/assets/imgs/ai/deepseek.png";
+import doubaoIcon from "@/assets/imgs/ai/doubao.png";
+import glmIcon from "@/assets/imgs/ai/glm.png";
+import kimiIcon from "@/assets/imgs/ai/kimi.png";
+import nanoIcon from "@/assets/imgs/ai/nano.png";
+import qianwenIcon from "@/assets/imgs/ai/qianwen.png";
+import yiyanIcon from "@/assets/imgs/ai/yiyan.png";
+import yuanbaoIcon from "@/assets/imgs/ai/yuanbao.png";
+import GeoMetricCard from "./components/GeoMetricCard.vue";
+import InsightPanel from "./components/InsightPanel.vue";
+import PlatformOverview, { type PlatformMetric } from "./components/PlatformOverview.vue";
+import RecentDiagnosis from "./components/RecentDiagnosis.vue";
+
+const router = useRouter();
+const loading = ref(true);
+const loadError = ref(false);
+const reportRows = ref<any[]>([]);
+const reportTotal = ref(0);
+const latestTasks = ref<any[]>([]);
+
+const platformMap: Record<string, { label: string; icon: string }> = {
+  deepseek: { label: "DeepSeek", icon: deepseekIcon },
+  doubao: { label: "豆包", icon: doubaoIcon },
+  glm: { label: "智谱清言", icon: glmIcon },
+  kimi: { label: "KIMI", icon: kimiIcon },
+  nano: { label: "纳米AI", icon: nanoIcon },
+  qianwen: { label: "通义千问", icon: qianwenIcon },
+  yiyan: { label: "文心一言", icon: yiyanIcon },
+  yuanbao: { label: "腾讯元宝", icon: yuanbaoIcon },
 };
-// 订单日历
-const calendarValue = ref(new Date());
-// 日历加载
-const calendarLoading = ref(false);
-// 服务城市分布
-// 地图加载失败
-const cityChartMapLoadingFail: Ref<boolean> = ref(false);
-let cityChartMapInstance: any = null;
-let cityChartAMap: any = null;
 
-/** 初始化图表 */
-const initChart = () => {
-  // 业务趋势
-  businessTrendChartInstance = echarts.init(
-    document.getElementById("trendChart")
-  );
-  const xM = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  // 近一年成交数量，呈波动上升趋势
-  const yD = [180, 390, 570, 720, 550, 630, 680, 400, 590, 620, 740, 860];
+const heroPlatforms = ["deepseek", "doubao", "kimi", "qianwen"].map((name) => ({ name, ...platformMap[name] }));
 
-  // 近一年成交金额
-  const yD2 = [
-    900, 1000, 1200, 1400, 1700, 1500, 2000, 2200, 2100, 2400, 2600, 2800,
-  ];
-  // 模拟增长趋势，基础值
-  // let baseQuantity = 50;
-  // let baseAmount = 1000;
+const completedReports = computed(() =>
+  reportRows.value.filter((item) => item.report?.status === "completed"),
+);
 
-  // 模拟季节性波动
-  // const seasonality = [
-  //   1.2, 1.1, 0.9, 0.8, 1.0, 1.3, 1.4, 1.2, 1.1, 0.9, 0.8, 1.2,
-  // ];
-  // for (let i = 0; i < xM.length; i++) {
-  //   // 成交数量模拟数据，包含增长趋势和季节性波动
-  //   const quantity = Math.floor(
-  //     baseQuantity * (1 + 0.05 * i) * seasonality[i] + Math.random() * 20
-  //   );
-  //   yD.push(quantity);
+const metrics = computed(() => {
+  const platformNames = new Set<string>();
+  const competitors = new Set<string>();
+  const mentionRates: number[] = [];
 
-  //   // 成交金额模拟数据，与成交数量相关，同时有自身波动
-  //   const amount = Math.floor(
-  //     baseAmount * (1 + 0.08 * i) * seasonality[i] + Math.random() * 500
-  //   );
-  //   yD2.push(amount);
-  // }
+  completedReports.value.forEach((item) => {
+    const report = item.report || {};
+    const rate = Number(report.brand_mention_rate);
+    if (Number.isFinite(rate)) mentionRates.push(rate);
 
-  businessTrendChartOption.xAxis[0].data = xM.map((e) => e + "月");
+    for (const platform of report.platform_summary || []) {
+      if (platform.platform) platformNames.add(platform.platform);
+      for (const competitor of platform.top_competitors || []) competitors.add(competitor);
+    }
+    for (const competitor of report.competitors || []) {
+      const name = typeof competitor === "string" ? competitor : competitor.brand;
+      if (name) competitors.add(name);
+    }
+  });
 
-  // 近一年成交数量
-  businessTrendChartOption.series[0].data = yD;
-  businessTrendChartOption.series[0].name = `近一年成交数量`;
+  return {
+    reportCount: reportTotal.value || reportRows.value.length,
+    averageMentionRate: mentionRates.length
+      ? mentionRates.reduce((sum, value) => sum + value, 0) / mentionRates.length
+      : 0,
+    platformCount: platformNames.size,
+    competitorCount: competitors.size,
+  };
+});
 
-  // 近一年成交金额
-  businessTrendChartOption.series[1].name = `近一年成交金额`;
-  businessTrendChartOption.series[1].data = yD2;
+const platformMetrics = computed<PlatformMetric[]>(() => {
+  const aggregate = new Map<string, { weightedRate: number; samples: number }>();
 
-  console.log(businessTrendChartOption);
+  completedReports.value.forEach((item) => {
+    for (const platform of item.report?.platform_summary || []) {
+      const name = platform.platform;
+      if (!name) continue;
+      const samples = Number(platform.total) || 0;
+      const rate = Number(platform.mention_rate) || 0;
+      const current = aggregate.get(name) || { weightedRate: 0, samples: 0 };
+      current.weightedRate += rate * Math.max(samples, 1);
+      current.samples += Math.max(samples, 1);
+      aggregate.set(name, current);
+    }
+  });
 
-  businessTrendChartInstance.setOption(businessTrendChartOption);
+  return Array.from(aggregate.entries())
+    .map(([name, value]) => ({
+      name,
+      label: platformMap[name]?.label || name,
+      icon: platformMap[name]?.icon || "",
+      rate: value.samples ? value.weightedRate / value.samples : 0,
+      samples: value.samples,
+    }))
+    .sort((a, b) => b.rate - a.rate);
+});
+
+const latestReport = computed(() => completedReports.value[0] || null);
+const latestInsight = computed(() => ({
+  brand: latestReport.value?.name || "",
+  findings: latestReport.value?.report?.executive_summary?.key_findings || [],
+  priorities: latestReport.value?.report?.executive_summary?.priority_focus || [],
+}));
+
+const formatRate = (value: number) => Number(value || 0).toFixed(value % 1 === 0 ? 0 : 1);
+const goDiagnosis = () => router.push("/biz/diagnosis/aiDiagnosis");
+const goReports = () => router.push("/biz/diagnosis/aiDiagnosisReport");
+const openLatestReport = () => {
+  if (!latestReport.value?.id) return goReports();
+  router.push({ path: "/biz/diagnosis/aiDiagnosisReportDetail", query: { id: latestReport.value.id } });
 };
-/** 初始化服务城市分布地图 */
-const initCityChart = async () => {
-  try {
-    const map = await AMapLoader.load({
-      key: import.meta.env.VITE_APP_GD_MAP_KEY,
-      version: "2.0",
-      plugins: [],
-    });
-    cityChartAMap = map;
-    let lat = 25.043024;
-    let lng = 102.70721;
-    cityChartMapInstance = new cityChartAMap.Map("cityChart", {
-      viewMode: "2D", // 默认使用 2D 模式，如果希望使用带有俯仰角的 3D 模式，请设置 viewMode: '3D'
-      zoom: 13, // 初始化地图层级
-      center: [lng, lat], // 初始化地图中心点
-      mapStyle: "amap://styles/whitesmoke", //设置地图的显示样式
-    });
-    // TODO 地图初始化完成，添加覆盖物
-  } catch (error) {
-    cityChartMapLoadingFail.value = true;
-    console.log("高德地图加载失败", error);
+const openTask = (task: any) => {
+  if (task.status === 7) {
+    router.push({ path: "/biz/diagnosis/aiDiagnosisReportDetail", query: { id: task.id } });
+    return;
   }
+  goDiagnosis();
 };
 
-onMounted(() => {
-  initChart();
-  initCityChart();
-});
-onUnmounted(() => {
-  businessTrendChartInstance?.dispose();
-});
+const copyWechat = async () => {
+  const ok = await copyText(DEMO_CONFIG.contact.wechat);
+  if (ok) showToastOk(`已复制微信号：${DEMO_CONFIG.contact.wechat}`);
+  else showToastFail("复制失败，请手动复制");
+};
+
+async function loadDashboard() {
+  loading.value = true;
+  loadError.value = false;
+  const [reportsResult, tasksResult] = await Promise.allSettled([
+    getDiagnoseReportList({ page: 1, page_size: 20 }),
+    queryLatestTaskList(),
+  ]);
+
+  if (reportsResult.status === "fulfilled") {
+    reportRows.value = reportsResult.value.data.result?.rows || [];
+    reportTotal.value = reportsResult.value.data.result?.total || reportRows.value.length;
+  } else {
+    reportRows.value = [];
+    reportTotal.value = 0;
+    loadError.value = true;
+  }
+
+  if (tasksResult.status === "fulfilled") {
+    latestTasks.value = tasksResult.value.data.result || [];
+  } else {
+    latestTasks.value = [];
+    loadError.value = true;
+  }
+  loading.value = false;
+}
+
+onMounted(loadDashboard);
 </script>
+
 <style lang="scss" scoped>
-:deep(.el-calendar-table .el-calendar-day) {
-  height: 50px;
-}
-.dashboard {
-  padding: 20px;
-  .dashboard-layout {
-  }
-}
-.date-item {
+.geo-dashboard {
+  width: 100%;
   height: 100%;
-  display: flex;
+  min-height: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--el-fill-color-extra-light);
+}
+
+.dashboard-hero {
   position: relative;
-  .title {
-    font-size: 12px;
-  }
-  .amount {
-    position: absolute;
-    left: -4px;
-    bottom: -5px;
-    font-size: 8px;
-    text-align: center;
-    color: white;
-    background-color: var(--el-color-primary);
-    padding: 1px 3px;
-    border-radius: 2px;
-    white-space: nowrap;
-    font-weight: 600;
-  }
-}
-.content-auto {
-  content-visibility: auto;
-}
-.animate-value {
-  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.chart-container {
-  height: 300px;
-}
-.card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-.stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.55fr);
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 82% 15%, rgba(96, 165, 250, 0.24), transparent 30%),
+    linear-gradient(125deg, #0f2557 0%, #164da1 58%, #2478e8 100%);
+  box-shadow: 0 18px 45px rgba(22, 77, 161, 0.2);
 }
-.pulse-animation {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-}
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.badge-notification {
+
+.hero-content {
   position: relative;
+  z-index: 2;
+  padding: 42px 44px;
+  color: #fff;
+
+  h1 { max-width: 720px; margin: 14px 0 12px; font-size: clamp(28px, 3vw, 42px); line-height: 1.2; letter-spacing: -1px; }
+  > p { max-width: 680px; margin: 0; color: rgba(255, 255, 255, 0.76); font-size: 14px; line-height: 1.8; }
 }
-.badge-notification::after {
-  content: attr(data-count);
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: #ef4444;
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  display: flex;
+
+.hero-badge {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: bold;
+  gap: 7px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.09);
+  font-size: 11px;
+  backdrop-filter: blur(10px);
+}
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.hero-actions :deep(.el-button--default) { border-color: rgba(255, 255, 255, 0.3); color: #fff; background: rgba(255, 255, 255, 0.08); }
+.hero-actions :deep(.el-button--default:hover) { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.15); }
+
+.experience-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+
+  > span { display: inline-flex; width: 20px; height: 20px; align-items: center; justify-content: center; border-radius: 50%; color: #fff; background: rgba(255, 255, 255, 0.14); font-weight: 700; }
+  strong { color: rgba(255, 255, 255, 0.86); font-weight: 500; }
+}
+
+.hero-visual { position: relative; min-height: 300px; }
+.signal-orbit { position: absolute; top: 50%; left: 50%; border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 50%; transform: translate(-50%, -50%); }
+.signal-orbit--outer { width: 270px; height: 270px; }
+.signal-orbit--inner { width: 170px; height: 170px; }
+.signal-core { position: absolute; top: 50%; left: 50%; display: flex; width: 104px; height: 104px; align-items: center; justify-content: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 28px; color: #fff; background: rgba(255, 255, 255, 0.12); box-shadow: 0 18px 50px rgba(3, 22, 60, 0.3); transform: translate(-50%, -50%); backdrop-filter: blur(14px); }
+.signal-core img { width: 27px; height: 27px; margin-bottom: 4px; }
+.signal-core strong { font-size: 20px; letter-spacing: 1px; }
+.signal-core span { color: rgba(255, 255, 255, 0.62); font-size: 9px; }
+.signal-node { position: absolute; display: flex; width: 42px; height: 42px; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 50%; background: rgba(255, 255, 255, 0.9); box-shadow: 0 8px 24px rgba(7, 35, 82, 0.28); }
+.signal-node img { width: 31px; height: 31px; object-fit: contain; }
+.signal-node--1 { top: 14%; left: 47%; }
+.signal-node--2 { top: 46%; right: 8%; }
+.signal-node--3 { bottom: 8%; left: 45%; }
+.signal-node--4 { top: 45%; left: 6%; }
+
+.demo-note { display: flex; align-items: center; gap: 8px; margin: 14px 2px 0; color: var(--el-text-color-secondary); font-size: 11px; }
+.demo-note .el-icon { color: var(--el-color-primary); }
+.dashboard-loading { margin-top: 20px; padding: 24px; border-radius: 16px; background: var(--el-bg-color); }
+.dashboard-alert { margin-top: 18px; }
+
+.metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.dashboard-grid { display: grid; gap: 16px; margin-top: 16px; }
+.dashboard-grid--primary { grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr); }
+.dashboard-grid--secondary { grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); }
+
+.dashboard-card { min-width: 0; padding: 22px; border: 1px solid var(--el-border-color-lighter); border-radius: 16px; background: var(--el-bg-color); box-shadow: 0 8px 24px rgba(31, 41, 55, 0.04); }
+.card-eyebrow { color: var(--el-color-primary); font-size: 10px; font-weight: 700; letter-spacing: 1.2px; }
+.full-edition-card { display: flex; flex-direction: column; background: linear-gradient(150deg, var(--el-bg-color) 0%, var(--el-color-primary-light-9) 100%); }
+.full-edition-card h2 { margin: 5px 0 8px; color: var(--el-text-color-primary); font-size: 18px; }
+.full-edition-card > div > p { margin: 0; color: var(--el-text-color-secondary); font-size: 12px; line-height: 1.7; }
+.capability-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+.capability-item { display: flex; min-width: 0; align-items: flex-start; gap: 9px; padding: 10px; border: 1px solid rgba(64, 128, 255, 0.1); border-radius: 10px; background: rgba(255, 255, 255, 0.64); }
+.capability-item > .el-icon { margin-top: 2px; flex-shrink: 0; color: var(--el-color-primary); }
+.capability-item span { display: flex; min-width: 0; flex-direction: column; gap: 3px; }
+.capability-item strong { color: var(--el-text-color-primary); font-size: 12px; }
+.capability-item small { color: var(--el-text-color-placeholder); font-size: 10px; line-height: 1.5; }
+.edition-cta { width: 100%; margin-top: auto; }
+
+@media (max-width: 1200px) {
+  .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard-grid--primary,
+  .dashboard-grid--secondary { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .dashboard-hero { grid-template-columns: 1fr; }
+  .hero-content { padding: 34px 28px; }
+  .hero-visual { display: none; }
+}
+
+@media (max-width: 600px) {
+  .geo-dashboard { padding: 12px; }
+  .hero-content { padding: 28px 20px; }
+  .hero-actions :deep(.el-button) { width: 100%; margin-left: 0; }
+  .experience-path .el-icon { display: none; }
+  .metric-grid { grid-template-columns: 1fr; gap: 12px; }
+  .capability-list { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
 </style>

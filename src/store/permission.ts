@@ -196,6 +196,7 @@ export const usePermissionStore = defineStore("permission", {
         if (item.path) {
           const modu: any = comPMap[item.path];
           // 视图不存在（体验版已裁剪的模块）：注册锁定页，保证菜单可点且不 404
+          item.locked = !modu;
           const component = modu ? modu.default : LockedFeature;
           if (modu && item.cache == 1) {
             this.cacheComponentNameList.push(item.route_name);
@@ -215,6 +216,7 @@ export const usePermissionStore = defineStore("permission", {
               icon_type: item.icon_type,
               show: item.show,
               status: item.status,
+              locked: !modu,
             },
           });
         }

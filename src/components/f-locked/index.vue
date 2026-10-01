@@ -1,235 +1,201 @@
 <template>
   <div class="f-locked">
     <div class="card">
+      <div class="preview-label"><el-icon><Lock /></el-icon>完整版能力预览</div>
       <div class="lock-icon">
-        <el-icon :size="42"><Lock /></el-icon>
+        <el-icon :size="36"><component :is="moduleIcon" /></el-icon>
       </div>
-      <h2 class="title">{{ DEMO_CONFIG.fullEdition.title }}</h2>
-      <p class="desc">{{ DEMO_CONFIG.fullEdition.description }}</p>
+      <p class="category">{{ moduleConfig.category }}</p>
+      <h2 class="title">{{ pageTitle }}</h2>
+      <p class="desc">{{ moduleConfig.description }}</p>
+      <p class="edition-note">{{ DEMO_CONFIG.fullEdition.description }}</p>
 
       <div class="features">
-        <div class="feature" v-for="f in features" :key="f">
+        <div v-for="feature in displayFeatures" :key="feature" class="feature">
           <el-icon class="dot"><CircleCheckFilled /></el-icon>
-          <span>{{ f }}</span>
+          <span>{{ feature }}</span>
         </div>
+      </div>
+
+      <div class="experience-actions">
+        <el-button type="primary" @click="goDiagnosis">
+          <el-icon><Aim /></el-icon>{{ DEMO_CONFIG.cta.continueExperience }}
+        </el-button>
+        <el-button @click="goReports">{{ DEMO_CONFIG.cta.viewReports }}</el-button>
       </div>
 
       <div class="contact">
-        <div class="qrcode" v-if="hasQrcode">
-          <el-image
-            :src="DEMO_CONFIG.contact.qrcodeUrl"
-            fit="cover"
-            class="qr-img"
-          >
-            <template #error>
-              <div class="qr-fallback">二维码待配置</div>
-            </template>
+        <div v-if="hasQrcode" class="qrcode">
+          <el-image :src="DEMO_CONFIG.contact.qrcodeUrl" fit="cover" class="qr-img">
+            <template #error><div class="qr-fallback">二维码待配置</div></template>
           </el-image>
-          <span class="qr-label">扫码联系</span>
+          <span class="qr-label">扫码联系获取完整版</span>
         </div>
         <div class="right">
-          <div class="wechat" v-if="DEMO_CONFIG.contact.wechat">
+          <div v-if="DEMO_CONFIG.contact.wechat" class="wechat">
             <span class="label">微信号</span>
             <code class="value">{{ DEMO_CONFIG.contact.wechat }}</code>
-            <el-button
-              size="small"
-              type="primary"
-              plain
-              @click="copyWechat"
-              >复制</el-button
-            >
+            <el-button size="small" type="primary" plain @click="copyWechat">复制</el-button>
           </div>
           <p class="tip">{{ DEMO_CONFIG.contact.tip }}</p>
-          <el-button
-            type="primary"
-            size="large"
-            class="btn"
-            @click="copyWechat"
-            >获取完整版源码</el-button
-          >
+          <el-button type="primary" size="large" class="btn" @click="copyWechat">
+            {{ DEMO_CONFIG.cta.getFullEdition }}
+          </el-button>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <script setup lang="ts" name="f-locked">
-import { DEMO_CONFIG, copyText } from "@/config/demo";
+import { DEMO_CONFIG, copyText, getLockedModuleConfig } from "@/config/demo";
 import { showToastOk, showToastFail } from "../f-toast";
 
-withDefaults(defineProps<{ features?: string[] }>(), {
-  features: () => [
-    "GEO 全网 AI 诊断与报告",
-    "AI 文章批量创作流水线",
-    "多渠道一键发布引擎",
-    "知识库与素材中心",
-    "多租户与计费系统",
-  ],
-});
+const props = defineProps<{ features?: string[] }>();
+const route = useRoute();
+const router = useRouter();
 
+const pageTitle = computed(() => String(route.meta.title || "当前功能"));
+const moduleConfig = computed(() => getLockedModuleConfig(pageTitle.value));
+const displayFeatures = computed(() => props.features || moduleConfig.value.features);
+const moduleIcon = computed(() => {
+  const category = moduleConfig.value.category;
+  if (category.includes("内容")) return "EditPen";
+  if (category.includes("知识")) return "Collection";
+  if (category.includes("发布")) return "Promotion";
+  if (category.includes("商业")) return "DataLine";
+  if (category.includes("系统")) return "Setting";
+  return "Connection";
+});
 const hasQrcode = DEMO_CONFIG.contact.qrcodeUrl !== "";
 
+const goDiagnosis = () => router.push("/biz/diagnosis/aiDiagnosis");
+const goReports = () => router.push("/biz/diagnosis/aiDiagnosisReport");
 const copyWechat = async () => {
   const ok = await copyText(DEMO_CONFIG.contact.wechat);
-  if (ok) {
-    showToastOk(`已复制微信号：${DEMO_CONFIG.contact.wechat}`);
-  } else {
-    showToastFail("复制失败，请手动复制");
-  }
+  if (ok) showToastOk(`已复制微信号：${DEMO_CONFIG.contact.wechat}`);
+  else showToastFail("复制失败，请手动复制");
 };
 </script>
+
 <style lang="scss" scoped>
 .f-locked {
-  width: 100%;
-  height: 100%;
   display: flex;
+  width: 100%;
+  min-height: 100%;
   align-items: center;
   justify-content: center;
   padding: 24px;
   box-sizing: border-box;
+  background:
+    radial-gradient(circle at 50% 10%, var(--el-color-primary-light-9), transparent 36%),
+    var(--el-fill-color-extra-light);
+}
 
-  .card {
-    width: 100%;
-    max-width: 620px;
-    background: #fff;
-    border-radius: 16px;
-    padding: 40px 44px;
-    box-shadow:
-      0 16px 32px rgba(27, 36, 44, 0.06),
-      0 0 0 1px rgba(27, 36, 44, 0.04);
-    text-align: center;
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  padding: 34px 42px 38px;
+  border: 1px solid var(--el-border-color-lighter);
+  border-radius: 20px;
+  background: var(--el-bg-color);
+  box-shadow: 0 20px 50px rgba(27, 36, 44, 0.08);
+  text-align: center;
+}
 
-    .lock-icon {
-      width: 84px;
-      height: 84px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      background: linear-gradient(
-        135deg,
-        var(--el-color-primary),
-        var(--el-color-primary-light-3)
-      );
-      box-shadow: 0 8px 20px rgba(var(--el-color-primary-rgb, 64, 128, 255), 0.35);
-    }
+.preview-label {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  color: var(--el-color-warning-dark-2);
+  background: var(--el-color-warning-light-9);
+  font-size: 10px;
+  font-weight: 600;
+}
 
-    .title {
-      margin: 0 0 10px;
-      font-size: 22px;
-      font-weight: 600;
-      color: #1d2432;
-    }
+.lock-icon {
+  display: flex;
+  width: 74px;
+  height: 74px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  border-radius: 22px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--el-color-primary), var(--el-color-primary-light-3));
+  box-shadow: 0 10px 24px rgba(64, 128, 255, 0.24);
+}
 
-    .desc {
-      margin: 0 auto 22px;
-      max-width: 480px;
-      font-size: 14px;
-      line-height: 1.8;
-      color: #606266;
-    }
+.category { margin: 0 0 5px; color: var(--el-color-primary); font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+.title { margin: 0 0 9px; color: var(--el-text-color-primary); font-size: 24px; font-weight: 650; }
+.desc { max-width: 560px; margin: 0 auto; color: var(--el-text-color-regular); font-size: 14px; line-height: 1.8; }
+.edition-note { max-width: 590px; margin: 8px auto 20px; color: var(--el-text-color-placeholder); font-size: 11px; line-height: 1.7; }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px 18px;
-      margin-bottom: 26px;
-      text-align: left;
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
 
-      .feature {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 13px;
-        color: #272e35;
-        background: var(--el-color-primary-light-9, #f5f7fa);
-        border-radius: 8px;
-        padding: 9px 12px;
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  color: var(--el-text-color-regular);
+  background: var(--el-fill-color-extra-light);
+  font-size: 12px;
 
-        .dot {
-          color: var(--el-color-primary);
-          flex-shrink: 0;
-        }
-      }
-    }
+  .dot { flex-shrink: 0; color: var(--el-color-primary); }
+}
 
-    .contact {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-      padding-top: 22px;
-      border-top: 1px dashed #e5e7eb;
+.experience-actions { display: flex; justify-content: center; gap: 10px; margin-bottom: 24px; }
 
-      .qrcode {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 22px;
+  border-top: 1px dashed var(--el-border-color);
+}
 
-        .qr-img {
-          width: 148px;
-          height: 148px;
-          border-radius: 10px;
-          border: 1px solid #eceef5;
-        }
+.qrcode {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
 
-        .qr-fallback {
-          width: 148px;
-          height: 148px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 12px;
-          color: #909399;
-          background: #f5f7fa;
-          border-radius: 10px;
-        }
+  .qr-img,
+  .qr-fallback { width: 128px; height: 128px; border: 1px solid var(--el-border-color-lighter); border-radius: 10px; }
+  .qr-fallback { display: flex; align-items: center; justify-content: center; color: var(--el-text-color-placeholder); background: var(--el-fill-color-light); font-size: 11px; }
+  .qr-label { color: var(--el-text-color-placeholder); font-size: 10px; }
+}
 
-        .qr-label {
-          font-size: 12px;
-          color: #909399;
-        }
-      }
+.right { display: flex; min-width: 240px; align-items: flex-start; flex-direction: column; gap: 11px; }
+.wechat { display: flex; align-items: center; gap: 9px; }
+.label { color: var(--el-text-color-placeholder); font-size: 12px; }
+.value { padding: 3px 9px; border-radius: 6px; color: var(--el-color-primary); background: var(--el-color-primary-light-9); font-size: 14px; font-weight: 700; }
+.tip { margin: 0; color: var(--el-text-color-placeholder); font-size: 11px; text-align: left; }
+.btn { width: 100%; }
 
-      .right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-
-        .wechat {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-
-          .label {
-            font-size: 13px;
-            color: #909399;
-          }
-
-          .value {
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--el-color-primary);
-            background: var(--el-color-primary-light-9, #f5f7fa);
-            padding: 3px 10px;
-            border-radius: 6px;
-          }
-        }
-
-        .tip {
-          margin: 0;
-          font-size: 12px;
-          color: #909399;
-        }
-
-        .btn {
-          width: 100%;
-        }
-      }
-    }
-  }
+@media (max-width: 640px) {
+  .f-locked { align-items: flex-start; padding: 12px; }
+  .card { padding: 64px 18px 24px; }
+  .features { grid-template-columns: 1fr; }
+  .experience-actions { flex-direction: column; }
+  .experience-actions :deep(.el-button) { width: 100%; margin-left: 0; }
+  .contact { flex-direction: column; gap: 18px; }
+  .right { width: 100%; min-width: 0; align-items: center; }
+  .tip { text-align: center; }
 }
 </style>

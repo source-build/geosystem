@@ -36,6 +36,13 @@ export const routes: any = [
         meta: { title: "仪表盘" },
         component: async () => await import("@/views/dashboard/index.vue"),
       },
+      {
+        path: "biz/sitebuilder/editor/:id",
+        name: "sitebuilder-editor",
+        hidden: true,
+        meta: { title: "站点编辑器", hidden: true },
+        component: async () => await import("@/views/biz/sitebuilder/editor/index.vue"),
+      },
     ],
   },
   {
@@ -44,6 +51,51 @@ export const routes: any = [
     meta: { title: "后台管理系统", root: true },
     component: async () => await import("@/layout/index.vue"),
     children: [],
+  },
+  {
+    path: "/aura",
+    name: "aura",
+    meta: { title: "意境 AI", root: true, standalone: true },
+    component: async () => await import("@/layout/auraAI/index.vue"),
+    redirect: "/aura/workspace",
+    children: [
+      {
+        path: "workspace",
+        name: "aura-workspace",
+        meta: { title: "AI 创作工作台" },
+        component: async () => await import("@/views/auraAI/workspace/index.vue"),
+      },
+      {
+        path: "product-showcase",
+        name: "aura-product-showcase",
+        meta: { title: "AI 商品套图" },
+        component: async () => await import("@/views/auraAI/productShowcase/index.vue"),
+      },
+      {
+        path: "fashion-showcase",
+        name: "aura-fashion-showcase",
+        meta: { title: "AI 服饰套图" },
+        component: async () => await import("@/views/auraAI/fashionShowcase/index.vue"),
+      },
+      {
+        path: "works",
+        name: "aura-works",
+        meta: { title: "我的作品" },
+        component: async () => await import("@/views/auraAI/works/index.vue"),
+      },
+      {
+        path: "compute",
+        name: "aura-compute",
+        meta: { title: "算力中心" },
+        component: async () => await import("@/views/auraAI/compute/index.vue"),
+      },
+      {
+        path: "preview/:capability?",
+        name: "aura-preview",
+        meta: { title: "完整版能力预览" },
+        component: async () => await import("@/views/auraAI/placeholder.vue"),
+      },
+    ],
   },
   {
     path: "/404",
@@ -84,7 +136,7 @@ router.beforeEach(async (to: any, from: any, next: any) => {
   // 匹配所有 root 域下的路由（admin、biz 等），非 root 域不添加标签
   const rootSegment = paths[1] || "";
   const isRootRoute = routes.some(
-    (r: any) => r.meta?.root && r.path === `/${rootSegment}`,
+    (r: any) => r.meta?.root && !r.meta?.standalone && r.path === `/${rootSegment}`,
   );
   if (isRootRoute) {
     useMenuStore().selectTagHandler(

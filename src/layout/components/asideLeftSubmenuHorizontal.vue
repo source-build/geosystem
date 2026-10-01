@@ -19,7 +19,10 @@
                       : '#c7c7c7'
                       " class="icon" />
                   </div>
-                  <span class="label">{{ item.short_name || item.name }} </span>
+                  <span class="label">{{ item.short_name || item.name }}</span>
+                  <span v-if="isMenuLocked(item)" class="edition-dot" title="该分组为完整版能力">
+                    <el-icon :size="9"><Lock /></el-icon>
+                  </span>
                 </div>
               </div>
             </div>
@@ -137,6 +140,12 @@ watch(accountBalance, (newVal, oldVal) => {
 let lastFetchTime = 0;
 // 账户算力的类型 tenant:租户账户算力 user:租户用户账户算力
 let accountBalanceType = "tenant";
+
+const isMenuLocked = (item: any): boolean => {
+  if (item.locked) return true;
+  const visibleChildren = (item.children || []).filter((child: any) => child.show == 1);
+  return visibleChildren.length > 0 && visibleChildren.every((child: any) => isMenuLocked(child));
+};
 
 // 获取一级菜单
 const firstLevelMenus = computed(() => {
@@ -622,6 +631,21 @@ run();
               font-size: 12px;
               white-space: nowrap;
               transition: all 0.2s ease-in-out;
+            }
+
+            .edition-dot {
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              display: inline-flex;
+              width: 15px;
+              height: 15px;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid rgba(247, 228, 121, 0.25);
+              border-radius: 50%;
+              color: #f7e479;
+              background: rgba(247, 228, 121, 0.08);
             }
           }
 

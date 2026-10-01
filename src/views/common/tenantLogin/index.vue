@@ -9,7 +9,15 @@
           <div class="header">
             <img src="/logo-text-dark.png" class="logo" />
             <div class="desc-box">
-              <span>全域覆盖能力，让品牌内容穿透 AI 检索壁垒 🌿</span>
+              <strong>品牌 AI 可见度，从一次诊断开始</strong>
+              <span>{{ DEMO_CONFIG.login.valueProposition }}</span>
+            </div>
+            <div class="experience-journey" aria-label="体验路径">
+              <template v-for="(step, index) in DEMO_CONFIG.login.journey" :key="step">
+                <span>{{ index + 1 }}</span>
+                <small>{{ step }}</small>
+                <i v-if="index < DEMO_CONFIG.login.journey.length - 1">→</i>
+              </template>
             </div>
           </div>
           <form class="form">
@@ -424,8 +432,9 @@ const submitForm = async () => {
     showToastFail("用户名只能包含字母、数字和下划线");
     return;
   }
-  if (ruleForm.identifier.length < 6 || ruleForm.identifier.length > 20) {
-    showToastFail("用户名长度必须在6-20位之间");
+  const minIdentifierLength = import.meta.env.VITE_DEMO_MODE === "true" ? 3 : 6;
+  if (ruleForm.identifier.length < minIdentifierLength || ruleForm.identifier.length > 20) {
+    showToastFail(`用户名长度必须在${minIdentifierLength}-20位之间`);
     return;
   }
 
@@ -587,9 +596,42 @@ getTenantOptions();
         }
 
         .desc-box {
-          font-size: 13px;
-          color: #44525fc7;
+          display: flex;
+          max-width: 390px;
+          align-items: center;
+          flex-direction: column;
+          gap: 5px;
           margin-top: 10px;
+          color: #44525f;
+          text-align: center;
+
+          strong { color: #1a2434; font-size: 16px; }
+          span { font-size: 12px; line-height: 1.6; }
+        }
+
+        .experience-journey {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          margin-top: 13px;
+          color: #657386;
+
+          > span {
+            display: inline-flex;
+            width: 19px;
+            height: 19px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--el-color-primary);
+            background: var(--el-color-primary-light-9);
+            font-size: 10px;
+            font-weight: 700;
+          }
+
+          small { font-size: 10px; white-space: nowrap; }
+          i { color: #b5bdc8; font-size: 11px; font-style: normal; }
         }
       }
     }

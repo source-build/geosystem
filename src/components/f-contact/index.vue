@@ -6,7 +6,7 @@
         v-show="panelVisible"
         @mouseleave="panelVisible = false"
       >
-        <div class="panel-title">获取完整版源码</div>
+        <div class="panel-title">{{ DEMO_CONFIG.cta.getFullEdition }}</div>
         <el-image
           v-if="DEMO_CONFIG.contact.qrcodeUrl"
           :src="DEMO_CONFIG.contact.qrcodeUrl"

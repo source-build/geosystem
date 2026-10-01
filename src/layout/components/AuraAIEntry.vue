@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="aura-btn" title="进入意境 AI 创作工坊" @click="goAura">
+  <button type="button" class="aura-btn" title="预览 GEO AI 内容创作能力" @click="goAura">
     <span class="aura-icon">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path class="spark-main"
@@ -9,8 +9,8 @@
       </svg>
     </span>
     <span class="aura-text">
-      <span class="t1">进入意境AI</span>
-      <span class="t2">AI创作工坊</span>
+      <span class="t1">GEO内容创作</span>
+      <span class="t2">完整版预览</span>
     </span>
     <span class="aura-arrow" aria-hidden="true">→</span>
     <div class="container-stars">
@@ -24,28 +24,12 @@
 </template>
 
 <script setup lang="ts" name="AuraAIEntry">
-import { ElMessageBox } from "element-plus";
-import { DEMO_CONFIG } from "@/config/demo";
+import { useRouter } from "vue-router";
 
-/** 体验版：AI 创作工坊为完整版专属，引导联系获取 */
-const goAura = () => {
-  ElMessageBox.alert(
-    `<div style="text-align:center;line-height:1.9">
-      <p style="font-size:14px;color:#606266;margin:0 0 6px">意境 AI 创作工坊（AI 生图 / 商品套图 / 服饰套图 / 算力中心）为完整版专属功能</p>
-      <p style="margin:0 0 10px">完整源码与技术支持，请扫码或添加微信：</p>
-      <p style="font-size:18px;font-weight:700;color:var(--el-color-primary);margin:0">${
-        DEMO_CONFIG.contact.wechat
-      }</p>
-      <p style="font-size:12px;color:#909399;margin:6px 0 0">${DEMO_CONFIG.contact.tip}</p>
-    </div>`,
-    "AI 创作工坊 · 完整版专属",
-    {
-      dangerouslyUseHTMLString: true,
-      confirmButtonText: "我知道了",
-      customStyle: { maxWidth: "420px" },
-    },
-  );
-};
+const router = useRouter();
+
+/** 进入可浏览、不可提交的意境 AI 公开预览区 */
+const goAura = () => router.push("/aura/workspace");
 </script>
 
 <style lang="scss" scoped>
@@ -115,10 +99,11 @@ const goAura = () => {
     position: relative;
     z-index: 2;
     display: inline-block;
-    width: 86px;
+    width: 104px;
     height: 16px;
     flex-shrink: 0;
     overflow: hidden;
+    white-space: nowrap;
 
     .t1,
     .t2 {
