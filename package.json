@@ -2,6 +2,16 @@
   "name": "blue-whale-geo-demo",
   "private": true,
   "version": "0.1.0",
+  "description": "Blue Whale GEO System - enterprise Generative Engine Optimization platform public demo",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/source-build/geosystem.git"
+  },
+  "homepage": "https://github.com/source-build/geosystem#readme",
+  "bugs": {
+    "url": "https://github.com/source-build/geosystem/issues"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --host",

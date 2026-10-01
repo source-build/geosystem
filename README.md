@@ -9,6 +9,8 @@
 
 Vue 3 + TypeScript 前端 × Golang 微服务后端（MySQL / PostgreSQL / ES / Redis / RabbitMQ）企业级 GEO 平台
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
+
 <sub>GEO System · GEOSystem · GEO Platform · Generative Engine Optimization · AI Visibility Optimization · AI Search Optimization · AEO · AI Content Marketing · AI Website Builder · Multi-tenant SaaS</sub>
 
 </div>
@@ -24,7 +26,7 @@ Vue 3 + TypeScript 前端 × Golang 微服务后端（MySQL / PostgreSQL / ES / 
 ## 🧭 功能导航
 
 - **核心能力**：[媒体资源发布](#媒体资源发布--全媒体资源库与投稿订单) · [AI 可见度诊断](#ai-可见度诊断--竞品分析与引用溯源) · [AI 建站](#ai-建站--品牌站点与可视化编辑器) · [GEO 设备管理](#geo-设备管理) · [GEO 内容生产](#geo-优化引擎--内容生产与运营管理) · [意境 AI](#意境-ai-创作工坊--aigc-业务线) · [多租户 SaaS](#多租户-saas)
-- **项目文档**：[系统特性](#-系统特性) · [快速开始](#-快速开始) · [技术栈](#-技术栈) · [源码获取](#-源码获取--商业授权)
+- **项目文档**：[系统特性](#-系统特性) · [快速开始](#-快速开始) · [技术栈](#-技术栈) · [开源许可](#-开源许可--商业授权) · [贡献指南](CONTRIBUTING.md) · [安全政策](SECURITY.md) · [更新日志](CHANGELOG.md) · [完整源码](#-完整源码--技术支持)
 
 ## 🧱 技术栈
 
@@ -240,7 +242,15 @@ npm run dev
 
 ---
 
-## 📦 源码获取 / 商业授权
+## 📜 开源许可 / 商业授权
+
+本仓库代码采用 [GNU Affero General Public License v3.0](LICENSE)（`AGPL-3.0-only`）开源。
+
+- **开源使用**：允许学习、修改、部署和商业使用，但必须遵守 AGPL-3.0，包括保留版权与许可证声明、提供对应源码，以及在通过网络提供修改版服务时向用户提供对应源码。
+- **商业授权**：如需闭源修改、专有 SaaS、私有化商业交付、品牌授权或免除 AGPL 的部分开源义务，请参阅 [商业授权说明](COMMERCIAL_LICENSE.md)。
+- **参与贡献**：提交代码前请阅读 [贡献指南](CONTRIBUTING.md)、[行为准则](CODE_OF_CONDUCT.md) 与 [安全政策](SECURITY.md)。
+
+## 📦 完整源码 / 技术支持
 
 本仓库面向技术交流开放。**完整业务模块源码、数据库设计、部署与二次开发支持**，请通过以下方式联系：
 
@@ -255,9 +265,10 @@ npm run dev
 
 ## 📄 声明
 
-> **作者声明：没有在任何其它平台进行代码售卖，请谨慎鉴别，上当受骗作者一律不负责。**
+> **作者声明：没有在任何其他平台进行代码售卖，请谨慎鉴别。因非官方渠道交易产生的纠纷与后果，项目维护者不承担责任。**
 >
-> 本项目仅供学习交流，严禁用于任何商业和非法用途，非本人使用而产生的纠纷与一切后果均与本人无关。
+> 本项目可以依据 AGPL-3.0 进行使用、修改和商业部署，但使用者必须履行该许可证规定的版权保留、源码提供及网络服务开源义务。任何使用行为均不得违反适用法律法规。
 
-- 「蓝鲸GEO」及相关名称、权益归作者所有；
-- 数据均为脱敏快照，不代表任何真实业务数据。
+- 「蓝鲸GEO」名称、Logo、商标及相关品牌权益不因源码开源而自动授权；
+- 公开体验数据均为脱敏快照或虚构数据，不代表任何真实业务数据；
+- 如需闭源或专有商业使用，请取得独立的[商业授权](COMMERCIAL_LICENSE.md)。
