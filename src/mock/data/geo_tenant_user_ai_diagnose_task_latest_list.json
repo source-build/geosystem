@@ -1,0 +1,28 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": [
+  {
+   "ai_platforms": "doubao",
+   "consumption_amount": 1300,
+   "diagnose_result_options": 1,
+   "finish_time": "2026-08-10T16:33:27+08:00",
+   "id": 31,
+   "industry_keywords": "家政行业",
+   "name": "库尔勒远洋家政服务中心",
+   "status": 7,
+   "submit_time": "2026-08-10T16:29:31+08:00"
+  },
+  {
+   "ai_platforms": "deepseek,doubao,glm,kimi,qianwen,yuanbao",
+   "consumption_amount": 1300,
+   "diagnose_result_options": 1,
+   "finish_time": "2026-07-26T22:42:52+08:00",
+   "id": 29,
+   "industry_keywords": "源构互联",
+   "name": "扫地机",
+   "status": 7,
+   "submit_time": "2026-07-26T22:32:18+08:00"
+  }
+ ]
+}

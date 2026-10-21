@@ -1,0 +1,89 @@
+{
+ "code": 0,
+ "msg": "操作成功",
+ "result": {
+  "rows": [
+   {
+    "created_at": "2024-09-07T23:35:40.493+08:00",
+    "deleted_at": null,
+    "id": 1,
+    "label": "性别",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2024-09-07T23:59:33.25+08:00",
+    "value": "gender"
+   },
+   {
+    "created_at": "2025-10-17T01:25:49.369+08:00",
+    "deleted_at": null,
+    "id": 90,
+    "label": "静态资源目录",
+    "parent_id": 0,
+    "remarks": "资源存储在对象存储中的目录信息",
+    "updated_at": "2025-10-17T01:25:49.369+08:00",
+    "value": "staticResourcesDir"
+   },
+   {
+    "created_at": "2026-04-30T13:42:56.278+08:00",
+    "deleted_at": null,
+    "id": 119,
+    "label": "租户账户流水类型",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2026-04-30T13:42:56.278+08:00",
+    "value": "TenantRecordType"
+   },
+   {
+    "created_at": "2026-06-19T14:38:36.443+08:00",
+    "deleted_at": null,
+    "id": 123,
+    "label": "创作方向",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2026-06-19T14:38:42.656+08:00",
+    "value": "CreationDirections"
+   },
+   {
+    "created_at": "2026-06-19T14:55:17.675+08:00",
+    "deleted_at": null,
+    "id": 156,
+    "label": "文案类型",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2026-06-19T14:55:17.675+08:00",
+    "value": "CopywritingTypes"
+   },
+   {
+    "created_at": "2026-06-20T17:02:15.503+08:00",
+    "deleted_at": null,
+    "id": 216,
+    "label": "用户账户交易记录业务类型",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2026-06-20T17:02:15.503+08:00",
+    "value": "UserAccountRecordBizType"
+   },
+   {
+    "created_at": "2026-07-10T22:39:27.775+08:00",
+    "deleted_at": null,
+    "id": 225,
+    "label": "投稿筛选维度",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2026-07-10T22:39:27.775+08:00",
+    "value": "SubmissionType"
+   },
+   {
+    "created_at": "2026-07-30T11:58:58.18+08:00",
+    "deleted_at": null,
+    "id": 240,
+    "label": "意境AI行业分类",
+    "parent_id": 0,
+    "remarks": "",
+    "updated_at": "2026-07-30T11:58:58.18+08:00",
+    "value": "auraAIIndustryClassification"
+   }
+  ],
+  "total": 8
+ }
+}

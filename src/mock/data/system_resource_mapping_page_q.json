@@ -1,0 +1,89 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "rows": [
+   {
+    "describe": "查询用户系统菜单列表",
+    "id": 17,
+    "name": "QueryUserSystemMenuList",
+    "parent_id": 16,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "查询系统角色Options",
+    "id": 18,
+    "name": "QuerySystemRoleOptions",
+    "parent_id": 16,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "获取系统内置角色列表",
+    "id": 19,
+    "name": "QuerySystemFixedRoles",
+    "parent_id": 16,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "查询部门列表",
+    "id": 24,
+    "name": "QueryDeptList",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "获取部门options",
+    "id": 25,
+    "name": "QueryDeptOptions",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "编辑部门",
+    "id": 26,
+    "name": "EditDept",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "创建部门",
+    "id": 27,
+    "name": "CreateDept",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "删除部门",
+    "id": 28,
+    "name": "DeleteDept",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "查询部门成员列表",
+    "id": 29,
+    "name": "QueryDeptMemberList",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   },
+   {
+    "describe": "向用户授权角色",
+    "id": 30,
+    "name": "DeptMemberGrantRole",
+    "parent_id": 22,
+    "risk_level": 0,
+    "type": 2
+   }
+  ],
+  "total": 135
+ }
+}

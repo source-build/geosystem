@@ -1,0 +1,1711 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "map": "{\"user\":\"用户服务\",\"system\":\"系统服务\",\"authentication\":\"认证服务\",\"online\":\"在线服务\",\"geo\":\"GEO服务\",\"aicreation\":\"意境AI服务\"}",
+  "rows": [
+   {
+    "routes": [
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/task"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/task/:id/share"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/transfer-images"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/model-gen"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/my-model"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/plan"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/fashion/case/:id/like"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/suite/task"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/suite/task/:id/share"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/suite/transfer-images"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/suite/case/:id/like"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant-user/suite/assist-writing"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant/markup"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/tenant/markup-model"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/model"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/model-provider"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/module"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/module-model"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/provider"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/provider/balance"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/tenant"
+     },
+     {
+      "method": "POST",
+      "path": "/aicreation/admin/tenant-model-price"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/model/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/model/:id/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/model-provider/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/model-provider/:id/toggle"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/module/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/module/:id/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/module-model/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/tenant/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/tenant/:id/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/tenant-model-price/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/provider/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/admin/provider/:id/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/tenant/markup"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/tenant/markup/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/aicreation/tenant/markup-model/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/model/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/model-provider/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/module/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/module-model/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/tenant/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/tenant-model-price/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/admin/provider/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/tenant-user/fashion/plan"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/tenant-user/fashion/my-model/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/tenant-user/fashion/task/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/tenant-user/suite/task/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/tenant/markup"
+     },
+     {
+      "method": "DELETE",
+      "path": "/aicreation/tenant/markup-model/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/case"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/case-categories"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/case/:id/use"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/model-gen/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/my-model"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/task"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/task/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/fashion/plan"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/consume-trend"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/consume-log"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/recent-works"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/running-tasks"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/metrics"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/biz-type-distribution"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/workbench/inspiration-plaza"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/suite/case"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/suite/case-categories"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/suite/case/:id/use"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/suite/task"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/suite/task/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/module/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/module/sub-modules"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/module/assistants"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/model/by-module"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant-user/task"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/markup"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/markup-model/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/markup-model/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/model/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/price-history/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/price-history/chart"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/tenant/pricing"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/model/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/model/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/model-provider/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/module/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/module/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/module-model/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/tenant/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/tenant/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/tenant-model-price/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/tenant-model-price/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/provider/list"
+     },
+     {
+      "method": "GET",
+      "path": "/aicreation/admin/provider/:id"
+     }
+    ],
+    "service": "aicreation"
+   },
+   {
+    "routes": [
+     {
+      "method": "GET",
+      "path": "/authentication/api-resource/list"
+     },
+     {
+      "method": "GET",
+      "path": "/authentication/api-policy/list"
+     },
+     {
+      "method": "GET",
+      "path": "/authentication/policy-auth/role-for-user/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/authentication/api-resource/add"
+     },
+     {
+      "method": "POST",
+      "path": "/authentication/api-policy/add"
+     },
+     {
+      "method": "POST",
+      "path": "/authentication/common/login/phone-captcha/send"
+     },
+     {
+      "method": "POST",
+      "path": "/authentication/common/login/phone-captcha/inspect"
+     },
+     {
+      "method": "POST",
+      "path": "/authentication/policy-auth/user-policy"
+     },
+     {
+      "method": "PUT",
+      "path": "/authentication/api-resource/edit/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/authentication/policy-auth/remove-user-policy"
+     },
+     {
+      "method": "DELETE",
+      "path": "/authentication/api-resource/del/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/authentication/api-policy/del"
+     },
+     {
+      "method": "PATCH",
+      "path": "/authentication/api-resource/update-describe/:id"
+     },
+     {
+      "method": "PATCH",
+      "path": "/authentication/api-resource/update-resource/:id"
+     }
+    ],
+    "service": "authentication"
+   },
+   {
+    "routes": [
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/ai-diagnose-task/add"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/ai-distillation-extension"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/ai-creation/task"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/article"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/article-class"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/smart-publish-task"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/smart-publish-task/cancel/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/submission-media/submit"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/keyword"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/knowledge-base"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/creation-template"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/creation-template/batch/delete"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/favorite"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/favorite/group"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-user/topic"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/submission-single-media-order/refund/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/submission-single-media-order/refund-item"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/submission-single-media-order/claim/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/submission-single-media-order/publish"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/smart-publish-task/claim/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/smart-publish-task/release/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant-member/smart-publish-task/publish/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant/submission-media"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant/submission-media/sync"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/tenant/account-password"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/admin/submission-option"
+     },
+     {
+      "method": "POST",
+      "path": "/geo/admin/submission-media"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-diagnose-task/report-list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-diagnose-task/report-detail/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-diagnose-task/latest-list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-distillation-extension/result"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-creation/task/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-creation/task/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/ai-creation/pricing"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/article-class/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/article-class/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/article-class/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/article/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/article/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/keyword/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/keyword/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/keyword/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/knowledge-base/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/knowledge-base/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/knowledge-base/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/submission-option/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/submission-media/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/submission-single-media-order/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/smart-publish-task/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/smart-publish-task/detail/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/topic/by-ids"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/topic/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/topic/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/topic/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/creation-template/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/creation-template/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/creation-template/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/favorite/group/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/favorite/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-user/favorite/ids"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/submission-single-media-order/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/submission-single-media-order/user-info/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/submission-single-media-order/counts"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/submission-single-media-order/performance"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/submission-option/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/submission-media/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/smart-publish-task/active"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/smart-publish-task/mine"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/smart-publish-task/pool/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/smart-publish-task/items/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant-member/article/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant/submission-media/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant/submission-media/template/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant/submission-media/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant/submission-option/options"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant/account-password/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/tenant/account-password/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/admin/submission-option/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/admin/submission-option/all"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/admin/submission-option/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/admin/submission-media/list"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/admin/submission-media/check"
+     },
+     {
+      "method": "GET",
+      "path": "/geo/admin/submission-media/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/article-class/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/article/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/ai-diagnose-task/cancel"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/keyword/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/knowledge-base/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/topic/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/creation-template/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant-user/favorite/group/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant/submission-media/batch/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant/submission-media/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant/submission-media/:id/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/tenant/account-password/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/admin/submission-media/batch/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/admin/submission-media/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/admin/submission-media/:id/status"
+     },
+     {
+      "method": "PUT",
+      "path": "/geo/admin/submission-option/:id"
+     },
+     {
+      "method": "PATCH",
+      "path": "/geo/tenant-user/keyword/:id/status"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/favorite/group/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/favorite/item/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/favorite/media/:media_id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/keyword/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/knowledge-base/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/article-class/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/article/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/topic/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant-user/creation-template/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant/submission-media/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/tenant/account-password/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/admin/submission-option/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/geo/admin/submission-media/:id"
+     }
+    ],
+    "service": "geo"
+   },
+   {
+    "routes": [
+     {
+      "method": "GET",
+      "path": "/online/device/window-list"
+     },
+     {
+      "method": "GET",
+      "path": "/online/device/window-detail"
+     },
+     {
+      "method": "GET",
+      "path": "/online/device/list"
+     },
+     {
+      "method": "GET",
+      "path": "/online/device/ai-window-count"
+     },
+     {
+      "method": "GET",
+      "path": "/online/device/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/online/sse/connect"
+     },
+     {
+      "method": "GET",
+      "path": "/online/common/ws/device/connect"
+     },
+     {
+      "method": "POST",
+      "path": "/online/device"
+     },
+     {
+      "method": "POST",
+      "path": "/online/device/:device_code/window"
+     },
+     {
+      "method": "PUT",
+      "path": "/online/device/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/online/device/:id/bind"
+     },
+     {
+      "method": "PUT",
+      "path": "/online/device/:id/unbind"
+     },
+     {
+      "method": "DELETE",
+      "path": "/online/device/:id"
+     }
+    ],
+    "service": "online"
+   },
+   {
+    "routes": [
+     {
+      "method": "GET",
+      "path": "/system/system-role/fixed-roles"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-role/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-role/tree"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-role/options"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-role/permissions"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-role-group/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-menu/user-menus"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-menu/user-buttons"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-menu/menu-all"
+     },
+     {
+      "method": "GET",
+      "path": "/system/system-menu-role/role-menus/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/system/settings/wechat-config"
+     },
+     {
+      "method": "GET",
+      "path": "/system/settings/alipay-config"
+     },
+     {
+      "method": "GET",
+      "path": "/system/settings/sms-balance"
+     },
+     {
+      "method": "GET",
+      "path": "/system/settings/config"
+     },
+     {
+      "method": "GET",
+      "path": "/system/settings/remote-config"
+     },
+     {
+      "method": "GET",
+      "path": "/system/service-status/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/resource-mapping/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/resource-mapping/dir-list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/resource-mapping/options"
+     },
+     {
+      "method": "GET",
+      "path": "/system/resource-mapping/page"
+     },
+     {
+      "method": "GET",
+      "path": "/system/resource-dir/static-access-key"
+     },
+     {
+      "method": "GET",
+      "path": "/system/resource-dir/static-upload-access-key"
+     },
+     {
+      "method": "GET",
+      "path": "/system/role-inheritance/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/common/settings/osd-domain"
+     },
+     {
+      "method": "GET",
+      "path": "/system/common/settings/is-examine"
+     },
+     {
+      "method": "GET",
+      "path": "/system/common/dict/values"
+     },
+     {
+      "method": "GET",
+      "path": "/system/common/application-agreement"
+     },
+     {
+      "method": "GET",
+      "path": "/system/common/customer-service/info"
+     },
+     {
+      "method": "GET",
+      "path": "/system/customer-service/info"
+     },
+     {
+      "method": "GET",
+      "path": "/system/file-manage/directory/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/file-manage/directory/tree"
+     },
+     {
+      "method": "GET",
+      "path": "/system/file-manage/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/file-manage/credential"
+     },
+     {
+      "method": "GET",
+      "path": "/system/dict/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/dict/value-list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/api-resource/list"
+     },
+     {
+      "method": "GET",
+      "path": "/system/wechat-web/menus"
+     },
+     {
+      "method": "POST",
+      "path": "/system/system-role"
+     },
+     {
+      "method": "POST",
+      "path": "/system/system-role/assign-permissions"
+     },
+     {
+      "method": "POST",
+      "path": "/system/system-role/remove-permissions"
+     },
+     {
+      "method": "POST",
+      "path": "/system/system-role-group"
+     },
+     {
+      "method": "POST",
+      "path": "/system/system-menu/menu"
+     },
+     {
+      "method": "POST",
+      "path": "/system/system-menu-role/add"
+     },
+     {
+      "method": "POST",
+      "path": "/system/resource-mapping"
+     },
+     {
+      "method": "POST",
+      "path": "/system/resource-mapping/dir"
+     },
+     {
+      "method": "POST",
+      "path": "/system/role-inheritance"
+     },
+     {
+      "method": "POST",
+      "path": "/system/file-manage/save"
+     },
+     {
+      "method": "POST",
+      "path": "/system/file-manage/directory"
+     },
+     {
+      "method": "POST",
+      "path": "/system/dict/add"
+     },
+     {
+      "method": "POST",
+      "path": "/system/wechat-web/menus"
+     },
+     {
+      "method": "POST",
+      "path": "/system/customer-service/save"
+     },
+     {
+      "method": "POST",
+      "path": "/system/application-agreement"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/settings/wechat-config"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/settings/alipay-config"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/settings/config"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/settings/remote-config"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/system-role/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/system-role-group/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/system-menu/menu/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/resource-mapping/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/dict/put/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/file-manage/directory"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/wechat-web/release-menus"
+     },
+     {
+      "method": "PUT",
+      "path": "/system/application-agreement"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/system-role/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/system-role-group/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/system-menu/menu/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/system-menu-role/del"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/role-inheritance"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/resource-mapping/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/file-manage/del/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/file-manage/directory/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/system/dict/del/:id"
+     },
+     {
+      "method": "PATCH",
+      "path": "/system/system-menu/menu/:id/number"
+     }
+    ],
+    "service": "system"
+   },
+   {
+    "routes": [
+     {
+      "method": "GET",
+      "path": "/user/tenant/user/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/user/login-record-list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/user/status-count"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/user/platform-type-count"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/user/unbound-list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/user-account/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/user-account/record-list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/dept/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/dept/options"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/dept-member/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/account/info"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/account/record-list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/admin-wx-auth/is-bind"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/pricing/info"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/pricing/system"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/tenant-user/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant/redemption-code/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/cloud/folder/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/cloud/folder/tree"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/cloud/folder/expansion-package"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/cloud/file/credential"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/cloud/file/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/cloud/space"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/account/info"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/account/stats"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/account/record/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/account/heatmap"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/pricing/info"
+     },
+     {
+      "method": "GET",
+      "path": "/user/tenant-user/user/dept"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/user/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/user/login-record-list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/user/status-count"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/user/search"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/user/platform-type-count"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/user/batch-info"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/tenant/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/tenant/options"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/tenant/:tenant_id"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/tenant-account/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/city/list/:name"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/city/bycode/:code"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/city/children-list/:code"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/admin-wx-auth/is-bind/root"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/admin-wx-auth/admin-list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/adm/regions/list"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/login/tenant/wx-qrcode"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/login/tenant/wx-qrcode-check/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/login/user/wx-mp-check"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/login/user/alipay-mp-check"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/login/admin/wx-qrcode"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/login/admin/wx-qrcode-check/:id"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/biz/city/by-citycode/:code"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/tenant/options"
+     },
+     {
+      "method": "GET",
+      "path": "/user/common/utils/ip-location"
+     },
+     {
+      "method": "GET",
+      "path": "/user/user/user-info/auths"
+     },
+     {
+      "method": "GET",
+      "path": "/user/openapi/push/wechat-jsapi/event"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/dept-member/grant-role"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/dept-member/revoke-role"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/dept-member/ban"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/dept-member/unban"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/dept-member/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/dept/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/tenant-user/ban"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/tenant-user/unban"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/tenant-user/force-logout"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/tenant-user/:user_id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant/pricing/update"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/tenant-user/cloud/folder/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/adm/tenant/status/:tenant_id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/adm/tenant/:tenant_id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/adm/tenant-account/balance"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/adm/tenant-pricing/sync"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/adm/regions"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/adm/admin-wx-auth/confirm/:id"
+     },
+     {
+      "method": "PUT",
+      "path": "/user/user/user-info"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant/dept"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant/dept-member"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant/admin-wx-auth/bind/qrcode"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant/tenant-user/create"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant/user-account/recharge"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant/redemption-code"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant-user/cloud/folder"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant-user/cloud/folder/activate"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant-user/cloud/file/save"
+     },
+     {
+      "method": "POST",
+      "path": "/user/tenant-user/redemption-code/exchange"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/user/wx-mp"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/user/alipay-mp"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/user/phone"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/tenant"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/tenant/wx-qrcode/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/admin"
+     },
+     {
+      "method": "POST",
+      "path": "/user/common/login/admin/wx-qrcode/:id"
+     },
+     {
+      "method": "POST",
+      "path": "/user/adm/admin-wx-auth/bind/root-qrcode"
+     },
+     {
+      "method": "POST",
+      "path": "/user/adm/admin-wx-auth/bind/qrcode"
+     },
+     {
+      "method": "POST",
+      "path": "/user/adm/tenant"
+     },
+     {
+      "method": "POST",
+      "path": "/user/adm/regions"
+     },
+     {
+      "method": "POST",
+      "path": "/user/user/user-info/upload-avatar"
+     },
+     {
+      "method": "POST",
+      "path": "/user/user/user-info/upload-avatar-by-remoteUrl"
+     },
+     {
+      "method": "POST",
+      "path": "/user/user/logout"
+     },
+     {
+      "method": "POST",
+      "path": "/user/openapi/push/wechat-jsapi/event"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/tenant/dept/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/tenant/dept-member/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/tenant/tenant-user/:user_id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/tenant/redemption-code/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/tenant-user/cloud/folder/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/tenant-user/cloud/file/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/adm/tenant/:tenant_id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/adm/regions/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/adm/admin-wx-auth/delete/:id"
+     },
+     {
+      "method": "DELETE",
+      "path": "/user/user/user-info/jwt"
+     }
+    ],
+    "service": "user"
+   }
+  ]
+ }
+}

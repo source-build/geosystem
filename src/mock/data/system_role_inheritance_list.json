@@ -1,0 +1,22 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": [
+  {
+   "child_id": 34,
+   "child_label": "总租户",
+   "child_alias": "superTenant",
+   "parent_id": 10,
+   "parent_label": "租户",
+   "parent_alias": "tenant"
+  },
+  {
+   "child_id": 43,
+   "child_label": "媒体投稿人员",
+   "child_alias": "SubmissionMedia",
+   "parent_id": 33,
+   "parent_label": "管理端人员",
+   "parent_alias": "admUser"
+  }
+ ]
+}

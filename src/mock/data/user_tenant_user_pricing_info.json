@@ -1,0 +1,17 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "id": 2,
+  "created_at": "2026-05-20T10:17:27.321+08:00",
+  "updated_at": "2026-06-29T16:51:32.398+08:00",
+  "deleted_at": null,
+  "user_id": 2,
+  "tenant_id": "000000",
+  "ai_diagnose_task_price": 1300,
+  "ai_diagnose_task_optimize_price": 300,
+  "ai_distillation_extension_price": 50,
+  "ai_creation_base_price": 1200,
+  "ai_creation_per_article_price": 150
+ }
+}

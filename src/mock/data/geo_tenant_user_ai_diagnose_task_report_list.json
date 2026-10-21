@@ -1,0 +1,1936 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "rows": [
+   {
+    "ai_platforms": "doubao",
+    "exception_reason": "",
+    "finish_time": "2026-08-10T16:33:27+08:00",
+    "id": 31,
+    "name": "库尔勒远洋家政服务中心",
+    "report": {
+     "ai_duration_sec": 194,
+     "answers": [
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "海格管家",
+        "南鑫家政",
+        "金来家政",
+        "好人缘家政",
+        "京东家政",
+        "天鹅到家",
+        "轻喜到家"
+       ],
+       "mentioned": false,
+       "mentioned_brands": [
+        "海格管家",
+        "南鑫家政",
+        "金来家政",
+        "好人缘家政",
+        "京东家政",
+        "天鹅到家",
+        "轻喜到家"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "找个靠谱点的保洁公司哪家好",
+       "sequence": 1,
+       "user_scenario": "周末想大扫除，想直接找家政公司的普通租客"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "云南金贝康养（金贝家政）",
+        "华静聪家政",
+        "邦尼家政",
+        "振坤家政",
+        "天鹅到家",
+        "58到家"
+       ],
+       "mentioned": false,
+       "mentioned_brands": [
+        "云南金贝康养（金贝家政）",
+        "华静聪家政",
+        "邦尼家政",
+        "振坤家政",
+        "天鹅到家",
+        "58到家"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "doubao",
+       "question": "照顾半自理老人的保姆找哪家家政公司",
+       "sequence": 2,
+       "user_scenario": "家里老人刚出院，需要找专业护工的家属"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "天鹅到家",
+        "轻喜到家",
+        "京东家政",
+        "南鑫家政",
+        "海格管家",
+        "E嫂家政",
+        "邦尼家政"
+       ],
+       "mentioned": false,
+       "mentioned_brands": [
+        "天鹅到家",
+        "轻喜到家",
+        "京东家政",
+        "南鑫家政",
+        "海格管家",
+        "E嫂家政",
+        "邦尼家政"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "花两三千请个钟点工做饭找哪家",
+       "sequence": 3,
+       "user_scenario": "预算有限，想找人每天做晚饭的双职工家庭"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "家政信用查（商务部）",
+        "好慷在家",
+        "天鹅到家",
+        "京东家政",
+        "芝麻背调",
+        "一诺背调"
+       ],
+       "mentioned": false,
+       "mentioned_brands": [
+        "家政信用查（商务部）",
+        "好慷在家",
+        "天鹅到家",
+        "京东家政",
+        "芝麻背调",
+        "一诺背调"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "doubao",
+       "question": "能查保洁阿姨背调和健康证找哪家",
+       "sequence": 4,
+       "user_scenario": "注重家庭安全，要求阿姨资质透明的宝妈"
+      },
+      {
+       "ai_has_search": false,
+       "angle": "对比推荐",
+       "mentioned": false,
+       "platform": "doubao",
+       "question": "找本地个体家政还是连锁大公司好",
+       "sequence": 5,
+       "user_scenario": "准备开荒保洁，纠结服务保障和价格的业主"
+      }
+     ],
+     "brand_avg_position": 0,
+     "brand_first_count": 0,
+     "brand_mention_rate": 0,
+     "brand_top3_count": 0,
+     "context_distribution": {
+      "not_mentioned": 5
+     },
+     "executive_summary": {
+      "key_findings": [
+       "目标品牌在通用、场景、价位、功能、对比等5大核心问题类型中曝光率为0，完全缺席AI推荐池。",
+       "家政行业的AI推荐心智已被全国性大平台（天鹅到家、京东家政）和部分区域强势品牌瓜分殆尽。",
+       "AI推荐具有强烈的场景化特征，目标品牌缺乏任何能被AI捕捉的专属服务标签（如价格优势或特定工种优势）。"
+      ],
+      "overall_position": "目标品牌（库尔勒远洋家政服务中心）在AI推荐体系中处于完全隐形状态，品牌权重和信息浓度极低。",
+      "priority_focus": [
+       "优先关注自身在公开互联网上的品牌信息铺设，确保AI爬虫能够抓取到品牌基础信息。",
+       "建立差异化场景标签（如突显库尔勒本地服务的性价比或特定优势），以抢占本地化推荐的空缺位置。"
+      ]
+     },
+     "industry_keywords": [
+      "家政行业"
+     ],
+     "platform_summary": [
+      {
+       "mention_rate": "0.0",
+       "platform": "doubao",
+       "top_competitors": [
+        "天鹅到家",
+        "京东家政",
+        "南鑫家政",
+        "海格管家",
+        "邦尼家政"
+       ],
+       "total": 5
+      }
+     ],
+     "report_id": "ibZbL2N6R0e-rxPM9miJkQ",
+     "status": "completed",
+     "task_id": 31,
+     "total_answers": 5
+    },
+    "status": 7,
+    "submit_time": "2026-08-10T16:29:31+08:00"
+   },
+   {
+    "ai_platforms": "doubao,deepseek,glm,kimi,qianwen,yuanbao",
+    "exception_reason": "解析跨平台深度分析结果失败",
+    "finish_time": "2026-07-26T23:45:21+08:00",
+    "id": 30,
+    "name": "石头扫地机器人",
+    "report": {
+     "ai_duration_sec": 512,
+     "answers": [
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "米家",
+        "云鲸"
+       ],
+       "mention_context_quote": "石头：以精细化导航算法见长，路径规划和避障能力是强项。根据2026上半年数据，它的市场份额与科沃斯非常接近，竞争激烈。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为石头属于第一梯队品牌，以精细化导航算法见长，路径规划和避障能力是强项。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "米家",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "deepseek",
+       "question": "扫地机器人买什么牌子的好用",
+       "sequence": 1,
+       "user_scenario": "准备给家里大扫除减负的普通用户，想直接买个口碑好的牌子"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "云鲸",
+        "大疆",
+        "追觅",
+        "米家"
+       ],
+       "mentioned": false,
+       "mentioned_brands": [
+        "科沃斯",
+        "云鲸",
+        "大疆",
+        "追觅",
+        "米家"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "deepseek",
+       "question": "养了两只猫买什么扫地机能防毛发缠绕",
+       "sequence": 2,
+       "user_scenario": "深受宠物掉毛困扰的铲屎官，急需解决地面毛发清理问题"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "云鲸",
+        "追觅"
+       ],
+       "mention_context_quote": "目前市面上表现最突出的是石头和科沃斯...石头 P20 Ultra：综合实力强，越障能力突出：机身7.98cm超薄，能进低矮家具底部；底盘可升降，能轻松翻越最高4cm的门槛，对家里门槛多、地形复杂的家庭非常友好。",
+       "mention_context_type": "focus",
+       "mention_description": "AI重点推荐石头P20 Ultra，认为其综合实力强、超薄机身及越障能力突出，是解决地形复杂痛点的独一无二的优势。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "云鲸",
+        "追觅"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "deepseek",
+       "question": "四千块左右买扫地机器人选哪个牌子",
+       "sequence": 3,
+       "user_scenario": "预算明确在四千元左右，想买个性价比高的中高端机型的消费者"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "云鲸",
+        "大疆",
+        "科沃斯",
+        "追觅"
+       ],
+       "mention_context_quote": "石头：自清洁功能非常强大和全面。G30S Pro吸力高达35000Pa，且能处理复杂障碍；P20 Ultra Plus则主打超薄机身和高温除菌。适合追求极致自清洁效果和强大综合性能的技术流用户。追求技术全面和极致的自清洁体验，可以重点看看石头的旗舰系列。",
+       "mention_context_type": "focus",
+       "mention_description": "AI重点推荐石头，认为其自清洁功能强大全面，拥有100°C高温洗等技术，适合追求极致自清洁体验的技术流用户。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "云鲸",
+        "石头",
+        "大疆",
+        "科沃斯",
+        "追觅"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "deepseek",
+       "question": "想买个能自动洗抹布的扫地机器人买哪家",
+       "sequence": 4,
+       "user_scenario": "不想自己手洗拖布的懒人，看重全自动清洁功能的买家"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "小米",
+        "云鲸",
+        "飞利浦",
+        "MOVA",
+        "海尔"
+       ],
+       "mention_context_quote": "全球出货量前五名被石头、科沃斯、追觅、小米、云鲸这五家中国品牌包揽...专业品牌代表：石头、追觅、科沃斯、云鲸...比如石头的导航算法。",
+       "mention_context_type": "normal",
+       "mention_description": "AI将石头列为专业品牌的首席代表，指出其核心优势在于导航算法和技术护城河深。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "小米",
+        "云鲸",
+        "飞利浦",
+        "MOVA",
+        "海尔"
+       ],
+       "mentioned_brands_count": 8,
+       "platform": "deepseek",
+       "question": "买生态链的扫地机还是选专业做扫地机的牌子",
+       "sequence": 5,
+       "user_scenario": "看重智能家居互联但又担心不够专业的纠结买家，在对比跨界品牌和专业品牌"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "米家",
+        "小米"
+       ],
+       "mention_context_quote": "石头P20 Max / P20 Ultra Plus：8.8cm越障能力，能翻越近9cm的门槛/地台，复式/高门槛家庭首选；100℃热水洗拖布+双机械臂贴边。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为石头越障能力强、适合大户型/复式/高门槛家庭，且将其列为3000元以上只选的四大头部品牌之一。",
+       "mention_position": 4,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "云鲸",
+        "石头",
+        "追觅",
+        "米家",
+        "小米"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "kimi",
+       "question": "扫地机器人买什么牌子的好用",
+       "sequence": 1,
+       "user_scenario": "准备给家里大扫除减负的普通用户，想直接买个口碑好的牌子"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "追觅",
+        "科沃斯",
+        "云鲸",
+        "逍遥",
+        "米家"
+       ],
+       "mention_context_quote": "石头 P20 Ultra 活水版：活水洗地+地毯干湿分离。防缠绕不是看...无滚筒/双悬臂对刷（石头）是目前实测最靠谱的两种方案之一。",
+       "mention_context_type": "normal",
+       "mention_description": "AI指出石头的防缠绕技术路线非常靠谱，推荐在有地毯和高清洁力需求的养宠场景下使用其活水版机型。",
+       "mention_position": 3,
+       "mentioned": true,
+       "mentioned_brands": [
+        "追觅",
+        "科沃斯",
+        "云鲸",
+        "逍遥",
+        "米家",
+        "石头"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "kimi",
+       "question": "养了两只猫买什么扫地机能防毛发缠绕",
+       "sequence": 2,
+       "user_scenario": "深受宠物掉毛困扰的铲屎官，急需解决地面毛发清理问题"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "小米",
+        "云鲸"
+       ],
+       "mention_context_quote": "四千块左右目前最主流的选择集中在 科沃斯、石头、追觅...石头 P20 Ultra 是这个价位段最\"没有短板\"的两款。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为石头是该价位段最主流且没有短板的选择，兼顾大户型和越障需求。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "小米",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "kimi",
+       "question": "四千块左右买扫地机器人选哪个牌子",
+       "sequence": 3,
+       "user_scenario": "预算明确在四千元左右，想买个性价比高的中高端机型的消费者"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "小米",
+        "米家",
+        "云鲸",
+        "美的"
+       ],
+       "mention_context_quote": "石头... 全能均衡，越障强，自动化程度最高 代表机型: P20 Max。家里门槛高、地形复杂 → 石头P20 Max（8.8cm越障）",
+       "mention_context_type": "focus",
+       "mention_description": "AI将石头列为各品牌特色总结的第一位，并在多处具体场景中将其作为首选推荐，强调其全能和越障能力。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "追觅",
+        "小米",
+        "米家",
+        "云鲸",
+        "美的",
+        "石头"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "kimi",
+       "question": "想买个能自动洗抹布的扫地机器人买哪家",
+       "sequence": 4,
+       "user_scenario": "不想自己手洗拖布的懒人，看重全自动清洁功能的买家"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "米家",
+        "追觅",
+        "科沃斯",
+        "云鲸",
+        "iRobot",
+        "华为",
+        "小米"
+       ],
+       "mention_context_quote": "生态链品牌（如米家、石头、追觅）...普通家庭选石头P20 Max（均衡无短板）",
+       "mention_context_type": "focus",
+       "mention_description": "AI将石头定义为兼具技术实力的生态链品牌代表，并在结尾作为普通家庭的“闭眼不踩坑”首选推荐。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "米家",
+        "石头",
+        "追觅",
+        "科沃斯",
+        "云鲸",
+        "iRobot",
+        "华为",
+        "小米"
+       ],
+       "mentioned_brands_count": 8,
+       "platform": "kimi",
+       "question": "买生态链的扫地机还是选专业做扫地机的牌子",
+       "sequence": 5,
+       "user_scenario": "看重智能家居互联但又担心不够专业的纠结买家，在对比跨界品牌和专业品牌"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "追觅",
+        "科沃斯",
+        "米家",
+        "云鲸",
+        "大疆"
+       ],
+       "mention_context_quote": "预算3000-4500元主推石头P20 Ultra Plus（综合避障与热洗拖布最强）...门槛地毯多/地形复杂选石头P20 Ultra Plus，8.8cm越障+底盘升降3.0",
+       "mention_context_type": "focus",
+       "mention_description": "AI重点推荐石头为主推品牌，认为其综合避障、越障能力强，防缠绕率低，算法聪明，适合复杂地形。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "追觅",
+        "科沃斯",
+        "米家",
+        "云鲸",
+        "大疆"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "glm",
+       "question": "扫地机器人买什么牌子的好用",
+       "sequence": 1,
+       "user_scenario": "准备给家里大扫除减负的普通用户，想直接买个口碑好的牌子"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "重点关注：石头 P20 / P20 Max / G20S 系列...主刷采用双悬臂对刷+差速旋转，配合纯胶刷或胶毛一体防缠设计，官方和实测都做到“毛发 0 缠绕率”。",
+       "mention_context_type": "focus",
+       "mention_description": "AI重点推荐石头系列用于防毛发缠绕，详细介绍了其双悬臂对刷、差速旋转及防缠绕切割系统，认为其特别适合养宠和长发家庭。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "glm",
+       "question": "养了两只猫买什么扫地机能防毛发缠绕",
+       "sequence": 2,
+       "user_scenario": "深受宠物掉毛困扰的铲屎官，急需解决地面毛发清理问题"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "一句话结论：四千左右预算优先看“头部四家”——石头、科沃斯、追觅、云鲸。...石头 P20 Pro：综合最均衡、热门度高。",
+       "mention_context_type": "focus",
+       "mention_description": "AI将石头列为四千左右预算的首选品牌，强调其综合体验最均衡，算法扎实，越障与边角覆盖强。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "glm",
+       "question": "四千块左右买扫地机器人选哪个牌子",
+       "sequence": 3,
+       "user_scenario": "预算明确在四千元左右，想买个性价比高的中高端机型的消费者"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家"
+       ],
+       "mention_context_quote": "主流就四家靠谱：科沃斯、追觅、石头、云鲸。...更看重边角死角覆盖率、机器人算法稳定度、全屋无漏扫：石头 P20 Ultra / G30S Pro",
+       "mention_context_type": "normal",
+       "mention_description": "AI将石头列为自动洗抹布机器人的主流四家之一，推荐其用于看重边角覆盖率、算法稳定度及越障能力的用户。",
+       "mention_position": 3,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "追觅",
+        "石头",
+        "云鲸",
+        "米家"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "glm",
+       "question": "想买个能自动洗抹布的扫地机器人买哪家",
+       "sequence": 4,
+       "user_scenario": "不想自己手洗拖布的懒人，看重全自动清洁功能的买家"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "米家",
+        "华为智选",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "iRobot"
+       ],
+       "mention_context_quote": "现在公认的第一梯队：科沃斯 Ecovacs、石头 Roborock、追觅 Dreame、云鲸 Narwal...技术更激进，导航算法、避障、基站自清洁等迭代更快。",
+       "mention_context_type": "normal",
+       "mention_description": "AI将石头列为专业做扫地机的第一梯队品牌，指出其技术激进、算法更新快，适合预算较高及环境复杂的家庭。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "米家",
+        "华为智选",
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "iRobot"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "glm",
+       "question": "买生态链的扫地机还是选专业做扫地机的牌子",
+       "sequence": 5,
+       "user_scenario": "看重智能家居互联但又担心不够专业的纠结买家，在对比跨界品牌和专业品牌"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "大疆"
+       ],
+       "mention_context_quote": "目前市面上的扫地机器人品牌众多，其中**石头、科沃斯、追觅、云鲸和大疆**在技术实力和口碑上表现最为突出。## 一、全能均衡与养宠首选 ### 综合全能：石头 P20 Max",
+       "mention_context_type": "focus",
+       "mention_description": "AI将石头列为推荐首位，作为综合全能与养宠首选，认为其大吸力、防缠绕且适合大户型。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "大疆"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "yuanbao",
+       "question": "扫地机器人买什么牌子的好用",
+       "sequence": 1,
+       "user_scenario": "准备给家里大扫除减负的普通用户，想直接买个口碑好的牌子"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "## 二、复杂地形与地毯推荐 ### 底盘升降：石头 P20 Max - **防缠技术**：采用双锥形螺旋主刷，毛发顺着纹理聚拢吸入，实现100%防缠绕。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为石头适合复杂地形与地毯家庭，具备底盘升降功能且防缠绕效果好。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "yuanbao",
+       "question": "养了两只猫买什么扫地机能防毛发缠绕",
+       "sequence": 2,
+       "user_scenario": "深受宠物掉毛困扰的铲屎官，急需解决地面毛发清理问题"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "追觅",
+        "科沃斯",
+        "云鲸"
+       ],
+       "mention_context_quote": "主流品牌如石头、追觅、科沃斯和云鲸在基础清洁力上都非常出色...## 一、全能均衡与复杂地形 ### 越障王者：石头 P20 Max",
+       "mention_context_type": "focus",
+       "mention_description": "AI将石头放在该价位段首位推荐，强调其全能均衡表现与越障能力。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "追觅",
+        "科沃斯",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "yuanbao",
+       "question": "四千块左右买扫地机器人选哪个牌子",
+       "sequence": 3,
+       "user_scenario": "预算明确在四千元左右，想买个性价比高的中高端机型的消费者"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "大疆",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "科沃斯、大疆、石头、追觅和云鲸等主流品牌在自清洁和综合体验上表现尤为出色。### 石头 P20 Ultra Plus - **核心功能**：支持100℃高温沸水洗布与55℃热风烘干",
+       "mention_context_type": "normal",
+       "mention_description": "AI推荐石头为极致自清洁款，强调其高温洗布与热风烘干能力，适合大户型除菌。",
+       "mention_position": 3,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "大疆",
+        "石头",
+        "追觅",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "yuanbao",
+       "question": "想买个能自动洗抹布的扫地机器人买哪家",
+       "sequence": 4,
+       "user_scenario": "不想自己手洗拖布的懒人，看重全自动清洁功能的买家"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "小米",
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "建议优先考虑科沃斯、石头等深耕该领域的专业品牌...### 算法与稳定标杆：石头 G30S Pro",
+       "mention_context_type": "normal",
+       "mention_description": "AI将石头定义为深耕领域的专业品牌代表，推荐理由是导航算法优秀、机身轻薄且工作稳定。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "小米",
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "yuanbao",
+       "question": "买生态链的扫地机还是选专业做扫地机的牌子",
+       "sequence": 5,
+       "user_scenario": "看重智能家居互联但又担心不够专业的纠结买家，在对比跨界品牌和专业品牌"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "小米",
+        "美的",
+        "大疆"
+       ],
+       "mention_context_quote": "### 2、石头｜算法天花板，耐用故障率低 **优点**：路线规划、全屋建图行业第一梯队，长时间运行稳定不易迷路死机；滚刷防缠绕做得很好，长发、宠物毛发不易缠绕；机身偏薄，容易钻进低矮床底沙发底；品控耐用性口碑很强，长期使用故障率低。",
+       "mention_context_type": "focus",
+       "mention_description": "AI认为石头是算法天花板，主打路线规划强、防缠绕且耐用故障率低，适合追求长期稳定和优先扫地能力的家庭。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "小米",
+        "美的",
+        "大疆"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "扫地机器人买什么牌子的好用",
+       "sequence": 1,
+       "user_scenario": "准备给家里大扫除减负的普通用户，想直接买个口碑好的牌子"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "云鲸",
+        "友望",
+        "科沃斯",
+        "萤石",
+        "追觅",
+        "大疆"
+       ],
+       "mention_context_quote": "#### ① 石头 P20 Max - 防缠：DuoDivide全域0缠系统，V型差速螺旋胶刷+自清万向轮，双猫日常浮毛几乎不缠绕，地毯清理稳定",
+       "mention_context_type": "focus",
+       "mention_description": "AI重点推荐石头P20 Max，认为其全域0缠系统及防缠结构能很好解决双猫家庭掉毛问题，适合有地毯、预算有限的家庭。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "云鲸",
+        "友望",
+        "石头",
+        "科沃斯",
+        "萤石",
+        "追觅",
+        "大疆"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "养了两只猫买什么扫地机能防毛发缠绕",
+       "sequence": 2,
+       "user_scenario": "深受宠物掉毛困扰的铲屎官，急需解决地面毛发清理问题"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "追觅",
+        "科沃斯",
+        "云鲸"
+       ],
+       "mention_context_quote": "### 1、石头科技｜全屋规划最强，大户型首选（最稳妥全能老牌） **主打优势**：路线算法行业第一，建图精准、不漏扫不重复走；结构光避障稳定，底盘升降、地毯识别成熟；100℃沸水清洗拖布+热风烘干，拖地不易发臭；品控稳定故障率低",
+       "mention_context_type": "focus",
+       "mention_description": "AI认为石头在4000元价位是最稳妥全能老牌，全屋规划最强，推荐了P20 Ultra，适合大户型及追求稳定省心的用户。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "追觅",
+        "科沃斯",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "doubao",
+       "question": "四千块左右买扫地机器人选哪个牌子",
+       "sequence": 3,
+       "user_scenario": "预算明确在四千元左右，想买个性价比高的中高端机型的消费者"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "云鲸",
+        "科沃斯",
+        "追觅",
+        "小米"
+       ],
+       "mention_context_quote": "### 2、石头（综合最稳，养宠家庭闭眼入） **主打：防缠绕第一、避障精准、品控耐用、震动加压拖地** - 优势：胶刷结构几乎不缠绕猫狗长毛，滚刷半年不用清理毛发；AI避障很稳，数据线、拖鞋、袜子不会乱撞卡死",
+       "mention_context_type": "focus",
+       "mention_description": "AI认为石头综合表现最稳，主打防缠绕第一、避障精准及品控耐用，适合养宠、长发及想要稳定不出故障的家庭。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "云鲸",
+        "石头",
+        "科沃斯",
+        "追觅",
+        "小米"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "doubao",
+       "question": "想买个能自动洗抹布的扫地机器人买哪家",
+       "sequence": 4,
+       "user_scenario": "不想自己手洗拖布的懒人，看重全自动清洁功能的买家"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "米家",
+        "华为智选",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "大疆"
+       ],
+       "mention_context_quote": "- 石头：路线算法稳、故障率低、机身薄，适合低矮家具多的家",
+       "mention_context_type": "normal",
+       "mention_description": "AI在介绍专业品牌优势时提到石头，认为其路线算法稳、故障率低、机身薄，并强调其自有品牌不属于配置阉割的米家贴牌机。",
+       "mention_position": 2,
+       "mentioned": true,
+       "mentioned_brands": [
+        "米家",
+        "华为智选",
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "大疆"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "买生态链的扫地机还是选专业做扫地机的牌子",
+       "sequence": 5,
+       "user_scenario": "看重智能家居互联但又担心不够专业的纠结买家，在对比跨界品牌和专业品牌"
+      }
+     ],
+     "brand_avg_position": 1.8,
+     "brand_first_count": 11,
+     "brand_mention_rate": 96,
+     "brand_top3_count": 23,
+     "context_distribution": {
+      "focus": 13,
+      "normal": 11,
+      "not_mentioned": 1
+     },
+     "handle_fail_ais": [
+      "{\"err\":\"invalid character ']' after object key:value pair\",\"name\":\"qianwen\",\"reason\":\"解析大模型回复失败\"}"
+     ],
+     "industry_keywords": [
+      "小米"
+     ],
+     "platform_summary": [
+      {
+       "avg_position": "1.5",
+       "mention_rate": "80.0",
+       "mentioned_count": 4,
+       "platform": "deepseek",
+       "top_competitors": [
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "米家",
+        "大疆"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "2.2",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "kimi",
+       "top_competitors": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家",
+        "小米"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "1.6",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "glm",
+       "top_competitors": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家",
+        "大疆"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "1.6",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "yuanbao",
+       "top_competitors": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "大疆",
+        "小米"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "1.4",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "doubao",
+       "top_competitors": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家",
+        "大疆"
+       ],
+       "total": 5
+      }
+     ],
+     "report_id": "gGQjAwRSSN-mASdGb2zdBw",
+     "status": "failed",
+     "task_id": 30,
+     "total_answers": 25
+    },
+    "status": 6,
+    "submit_time": "2026-07-26T23:35:37+08:00"
+   },
+   {
+    "ai_platforms": "deepseek,doubao,glm,kimi,qianwen,yuanbao",
+    "exception_reason": "",
+    "finish_time": "2026-07-26T22:42:52+08:00",
+    "id": 29,
+    "name": "扫地机",
+    "report": {
+     "ai_duration_sec": 560,
+     "answers": [
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "米家"
+       ],
+       "mention_context_quote": "目前市面上科沃斯、石头、追觅、云鲸和米家等主流品牌的扫地机在基础清洁上已无短板。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为该品类在基础清洁上已无短板，并将市面上主流品牌作为统称提及。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "米家"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "yuanbao",
+       "question": "家里买个扫地机选哪个牌子好用",
+       "sequence": 1,
+       "user_scenario": "普通家庭用户，第一次考虑购入清洁家电。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "追觅",
+        "云鲸",
+        "科沃斯",
+        "石头"
+       ],
+       "mention_context_quote": "养猫家庭选购扫地机，核心痛点是**毛发缠绕**与**避障**。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为该品类能解决养猫家庭的核心痛点毛发缠绕与避障问题。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "追觅",
+        "云鲸",
+        "科沃斯",
+        "石头"
+       ],
+       "mentioned_brands_count": 4,
+       "platform": "yuanbao",
+       "question": "家里养猫到处掉毛买啥扫地机合适",
+       "sequence": 2,
+       "user_scenario": "养宠物的家庭用户，面临严重的宠物毛发清理难题。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "追觅",
+        "科沃斯",
+        "云鲸"
+       ],
+       "mention_context_quote": "3000元左右是扫地机器人市场的“黄金预算”",
+       "mention_context_type": "normal",
+       "mention_description": "AI指出该品类在3000元黄金预算价位段已全面标配全能基站等成熟系统。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "追觅",
+        "科沃斯",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 3,
+       "platform": "yuanbao",
+       "question": "三千块左右预算买扫地机选哪家",
+       "sequence": 3,
+       "user_scenario": "预算明确的消费者，想在中端价位段里挑产品。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "石头",
+        "科沃斯",
+        "追觅"
+       ],
+       "mention_context_quote": "选购能自己洗抹布的扫地机时，除了关注基础的自动洗拖布功能外，建议优先考虑带有**热风烘干**和**高温热水洗**的基站",
+       "mention_context_type": "normal",
+       "mention_description": "AI针对具备自己洗抹布功能的该品类给出了热风烘干和高温热水洗的选购建议。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅"
+       ],
+       "mentioned_brands_count": 3,
+       "platform": "yuanbao",
+       "question": "想要能自己洗抹布的扫地机买哪个",
+       "sequence": 4,
+       "user_scenario": "追求省心免手洗体验，看重特定自动化功能的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "小米"
+       ],
+       "mention_context_quote": "目前国产扫地机在导航、避障和自清洁技术上已全面领先，占据了全球近七成的市场份额。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为国产该品类在技术和发展上已全面领先，占据全球近七成市场份额。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "小米"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "yuanbao",
+       "question": "国产扫地机品牌里哪个最好用",
+       "sequence": 5,
+       "user_scenario": "倾向于支持国货，想在国内头部品牌中做挑选的用户。"
+      },
+      {
+       "ai_has_search": false,
+       "mentioned": false,
+       "platform": "qianwen",
+       "sequence": 1
+      },
+      {
+       "ai_has_search": false,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "米家"
+       ],
+       "mention_context_quote": "25000Pa 飓风吸力，养猫家庭吸毛绰绰有余；0 缠清扫系统，通过德国莱茵 TÜV 防缠绕认证；有宠物专属清洁模式。",
+       "mention_context_type": "focus",
+       "mention_description": "AI认为该品牌防缠绕能力强且有宠物专属清洁模式，作为第一梯队首位推荐，适合多猫和长毛猫家庭。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "米家"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "qianwen",
+       "question": "家里养猫到处掉毛买啥扫地机合适",
+       "sequence": 2,
+       "user_scenario": "养宠物的家庭用户，面临严重的宠物毛发清理难题。"
+      },
+      {
+       "ai_has_search": false,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "追觅",
+        "云鲸",
+        "科沃斯",
+        "MOVA"
+       ],
+       "mention_context_quote": "激光雷达融合避障 + 热风烘干，稳定性好。适合家具多/复杂户型、在意避障精准度。",
+       "mention_context_type": "normal",
+       "mention_description": "AI认为该品牌避障方案成熟稳定，适合家具多、复杂户型且在意避障精准度的家庭。",
+       "mention_position": 3,
+       "mentioned": true,
+       "mentioned_brands": [
+        "追觅",
+        "云鲸",
+        "石头",
+        "科沃斯",
+        "MOVA"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "qianwen",
+       "question": "三千块左右预算买扫地机选哪家",
+       "sequence": 3,
+       "user_scenario": "预算明确的消费者，想在中端价位段里挑产品。"
+      },
+      {
+       "ai_has_search": false,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "Mova",
+        "科沃斯",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "底盘升降 3.0，8.8cm 双层越障（门槛克星）；0 缠绕设计，养宠家庭友好；2026 年多榜单排名第一。",
+       "mention_context_type": "normal",
+       "mention_description": "AI评价其为顶配天花板，具有越障能力强、0缠绕设计等优点，是大户型/多门槛/养宠家庭的最优解。",
+       "mention_position": 5,
+       "mentioned": true,
+       "mentioned_brands": [
+        "Mova",
+        "科沃斯",
+        "追觅",
+        "石头",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "qianwen",
+       "question": "想要能自己洗抹布的扫地机买哪个",
+       "sequence": 4,
+       "user_scenario": "追求省心免手洗体验，看重特定自动化功能的用户。"
+      },
+      {
+       "ai_has_search": false,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家"
+       ],
+       "mention_context_quote": "算法标杆、综合全能。路径规划/避障算法成熟，机身做得薄（可钻低矮家具），全球销量领先。",
+       "mention_context_type": "focus",
+       "mention_description": "AI认为该品牌是算法标杆、综合全能，在头部四大品牌中位列首位，追求省心稳定的首选。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "qianwen",
+       "question": "国产扫地机品牌里哪个最好用",
+       "sequence": 5,
+       "user_scenario": "倾向于支持国货，想在国内头部品牌中做挑选的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "石头",
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "小米/米家",
+        "大疆"
+       ],
+       "mention_context_quote": "已有小米生态，或初次尝试扫地机 | 入门到中端",
+       "mention_context_type": "brief",
+       "mention_description": "AI将扫地机（作为品类名称）与品牌结合，推荐已有小米生态或初次尝试扫地机的家庭选择该品类入门。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "小米/米家",
+        "大疆"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "kimi",
+       "question": "家里买个扫地机选哪个牌子好用",
+       "sequence": 1,
+       "user_scenario": "普通家庭用户，第一次考虑购入清洁家电。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "石头",
+        "云鲸",
+        "追觅",
+        "米家",
+        "3i"
+       ],
+       "mention_context_quote": "养猫家庭选扫地机，核心就三点",
+       "mention_context_type": "brief",
+       "mention_description": "AI在开篇作为品类名称顺带提及扫地机，并未针对该目标品牌做具体的品牌或产品推荐。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "云鲸",
+        "追觅",
+        "米家",
+        "3i"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "kimi",
+       "question": "家里养猫到处掉毛买啥扫地机合适",
+       "sequence": 2,
+       "user_scenario": "养宠物的家庭用户，面临严重的宠物毛发清理难题。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "云鲸",
+        "科沃斯"
+       ],
+       "mention_context_quote": "三千块左右是2026年扫地机器人最“卷”的价位段",
+       "mention_context_type": "brief",
+       "mention_description": "AI在回答开头作为品类名称顺带提及扫地机（器），未作为独立品牌进行产品推荐。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "云鲸",
+        "科沃斯"
+       ],
+       "mentioned_brands_count": 2,
+       "platform": "kimi",
+       "question": "三千块左右预算买扫地机选哪家",
+       "sequence": 3,
+       "user_scenario": "预算明确的消费者，想在中端价位段里挑产品。"
+      },
+      {
+       "ai_has_search": false,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "石头",
+        "科沃斯",
+        "追觅"
+       ],
+       "mention_context_quote": "2026年能自己洗抹布的扫地机选择很多",
+       "mention_context_type": "brief",
+       "mention_description": "AI在开头作为品类名称顺带提及扫地机，未将其作为具体品牌推荐。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅"
+       ],
+       "mentioned_brands_count": 3,
+       "platform": "kimi",
+       "question": "想要能自己洗抹布的扫地机买哪个",
+       "sequence": 4,
+       "user_scenario": "追求省心免手洗体验，看重特定自动化功能的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "米家（小米）"
+       ],
+       "mention_context_quote": "2026年国产扫地机器人已经垄断全球市场前五",
+       "mention_context_type": "brief",
+       "mention_description": "AI在开篇作为品类名称顺带提及扫地机（器），未将其视为具体品牌做推荐。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "米家（小米）"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "kimi",
+       "question": "国产扫地机品牌里哪个最好用",
+       "sequence": 5,
+       "user_scenario": "倾向于支持国货，想在国内头部品牌中做挑选的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "米家",
+        "云鲸"
+       ],
+       "mention_context_quote": "目前买扫地机器人，可以重点关注**科沃斯、石头、追觅**这三大头部品牌",
+       "mention_context_type": "brief",
+       "mention_description": "AI在开头介绍中将“扫地机器人”作为所有竞品（科沃斯、石头等）的通用品类名称进行顺带提及。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "科沃斯",
+        "石头",
+        "追觅",
+        "米家",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "deepseek",
+       "question": "家里买个扫地机选哪个牌子好用",
+       "sequence": 1,
+       "user_scenario": "普通家庭用户，第一次考虑购入清洁家电。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "石头",
+        "追觅",
+        "科沃斯",
+        "萤石"
+       ],
+       "mention_context_quote": "针对养猫家庭的掉毛问题，选扫地机的核心就是看 「毛发防缠绕」和「避障能力」 这两点。",
+       "mention_context_type": "brief",
+       "mention_description": "AI将目标品牌“扫地机”作为讨论竞品（石头、追觅等）防缠绕技术的通用产品品类名称进行了顺带提及。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "追觅",
+        "科沃斯",
+        "萤石"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "deepseek",
+       "question": "家里养猫到处掉毛买啥扫地机合适",
+       "sequence": 2,
+       "user_scenario": "养宠物的家庭用户，面临严重的宠物毛发清理难题。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "米家",
+        "石头",
+        "科沃斯",
+        "追觅"
+       ],
+       "mention_context_quote": "在3000元这个价位，你已经可以买到带**全能基站**...的扫地机器人了",
+       "mention_context_type": "brief",
+       "mention_description": "AI将目标品牌“扫地机”作为通用品类代称在开头顺带提及，随后主要推荐了米家、石头、科沃斯和追觅的具体产品。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "米家",
+        "石头",
+        "科沃斯",
+        "追觅"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "deepseek",
+       "question": "三千块左右预算买扫地机选哪家",
+       "sequence": 3,
+       "user_scenario": "预算明确的消费者，想在中端价位段里挑产品。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "石头",
+        "云鲸",
+        "MOVA",
+        "iRobot"
+       ],
+       "mention_context_quote": "现在主流的**自清洁扫拖机器人**都能实现这个功能",
+       "mention_context_type": "brief",
+       "mention_description": "AI在开头介绍产品背景时，将“扫地机”作为品类统称顺带提及。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "云鲸",
+        "MOVA",
+        "iRobot"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "deepseek",
+       "question": "想要能自己洗抹布的扫地机买哪个",
+       "sequence": 4,
+       "user_scenario": "追求省心免手洗体验，看重特定自动化功能的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "追觅",
+        "石头",
+        "米家",
+        "云鲸",
+        "科沃斯",
+        "MOVA"
+       ],
+       "mention_context_quote": "这份报告对市面上13个主流品牌的20款扫地机器人（售价1999-4299元）进行了实测",
+       "mention_context_type": "brief",
+       "mention_description": "AI在说明测评背景时，将“扫地机器人”作为产品品类统称顺带提及。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "追觅",
+        "石头",
+        "米家",
+        "云鲸",
+        "科沃斯",
+        "MOVA"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "deepseek",
+       "question": "国产扫地机品牌里哪个最好用",
+       "sequence": 5,
+       "user_scenario": "倾向于支持国货，想在国内头部品牌中做挑选的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "小米",
+        "米家",
+        "友望",
+        "美的",
+        "海尔",
+        "大疆",
+        "飞利浦",
+        "UWANT",
+        "MOVA"
+       ],
+       "mention_context_quote": "现在买扫地机，优先看“中国五强”——石头、科沃斯、追觅、云鲸、小米/米家。",
+       "mention_context_type": "focus",
+       "mention_description": "AI将扫地机品类作为核心探讨对象，并详细梳理了主流扫地机品牌的优缺点和选购指南。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "小米",
+        "米家",
+        "友望",
+        "美的",
+        "海尔",
+        "大疆",
+        "飞利浦",
+        "UWANT",
+        "MOVA"
+       ],
+       "mentioned_brands_count": 13,
+       "platform": "glm",
+       "question": "家里买个扫地机选哪个牌子好用",
+       "sequence": 1,
+       "user_scenario": "普通家庭用户，第一次考虑购入清洁家电。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "友望"
+       ],
+       "mention_context_quote": "家里养猫、掉毛很多，买扫地机优先选：“防缠绕滚刷 + 大吸力 + 全能基站”的扫拖一体机。",
+       "mention_context_type": "focus",
+       "mention_description": "AI针对养宠家庭场景，详细推荐了多款具备防缠绕、大吸力功能的扫地机产品及选购要点。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "友望"
+       ],
+       "mentioned_brands_count": 5,
+       "platform": "glm",
+       "question": "家里养猫到处掉毛买啥扫地机合适",
+       "sequence": 2,
+       "user_scenario": "养宠物的家庭用户，面临严重的宠物毛发清理难题。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "小米",
+        "米家"
+       ],
+       "mention_context_quote": "先给你结论，然后再展开说怎么选和具体机型。一句话建议（3000元左右预算）：科沃斯 T80S...",
+       "mention_context_type": "focus",
+       "mention_description": "AI围绕3000元预算，详细对比并推荐了多款高性价比的扫地机品牌和具体型号。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "石头",
+        "追觅",
+        "云鲸",
+        "小米",
+        "米家"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "glm",
+       "question": "三千块左右预算买扫地机选哪家",
+       "sequence": 3,
+       "user_scenario": "预算明确的消费者，想在中端价位段里挑产品。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "科沃斯",
+        "米家",
+        "追觅",
+        "云鲸",
+        "石头",
+        "友望",
+        "添可"
+       ],
+       "mention_context_quote": "现在主流品牌都能做到“自己洗抹布”，关键是选对“带全能基站的扫拖一体机器人”。",
+       "mention_context_type": "focus",
+       "mention_description": "AI针对自动洗抹布功能，按预算分档推荐了多款配备全能基站的扫地机器人。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "科沃斯",
+        "米家",
+        "追觅",
+        "云鲸",
+        "石头",
+        "友望",
+        "添可"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "glm",
+       "question": "想要能自己洗抹布的扫地机买哪个",
+       "sequence": 4,
+       "user_scenario": "追求省心免手洗体验，看重特定自动化功能的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "追觅",
+        "石头",
+        "科沃斯",
+        "云鲸",
+        "小米",
+        "大疆"
+       ],
+       "mention_context_quote": "国产扫地机没有绝对\"最好\"的单一品牌，综合清洁力、智能化、售后口碑来看，追觅、石头、科沃斯、云鲸是当前第一梯队",
+       "mention_context_type": "focus",
+       "mention_description": "AI详细对比了国产扫地机第一梯队品牌的优缺点，并根据不同需求给出了具体的型号推荐。",
+       "mentioned": true,
+       "mentioned_brands": [
+        "追觅",
+        "石头",
+        "科沃斯",
+        "云鲸",
+        "小米",
+        "大疆"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "glm",
+       "question": "国产扫地机品牌里哪个最好用",
+       "sequence": 5,
+       "user_scenario": "倾向于支持国货，想在国内头部品牌中做挑选的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "通用推荐",
+       "competitor_brands": [
+        "石头",
+        "云鲸",
+        "科沃斯",
+        "追觅",
+        "小米",
+        "米家"
+       ],
+       "mention_context_quote": "扫地机器人品牌全梳理...绝大多数家庭、养猫掉毛...想要自动洗抹布、烘干刚需闭眼选",
+       "mention_context_type": "normal",
+       "mention_description": "AI将其作为最推荐的养猫普通家庭首选，指出其均衡耐用、防毛发缠绕、故障率低，但也提到边角贴边略弱。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "云鲸",
+        "科沃斯",
+        "追觅",
+        "小米",
+        "米家"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "家里买个扫地机选哪个牌子好用",
+       "sequence": 1,
+       "user_scenario": "普通家庭用户，第一次考虑购入清洁家电。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "场景推荐",
+       "competitor_brands": [
+        "石头",
+        "云鲸",
+        "追觅",
+        "小米",
+        "萤石"
+       ],
+       "mention_context_quote": "养猫掉毛扫地机选购全指南（刚需：防缠毛+自动洗拖布）...优先锁定4硬性标准，再分预算推荐，重点对比石头全系。",
+       "mention_context_type": "focus",
+       "mention_description": "AI在养猫掉毛场景下将其作为首选重点推荐，详细介绍多款机型，强调其防缠结构、大吸力及避障能力。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "云鲸",
+        "追觅",
+        "小米",
+        "萤石"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "doubao",
+       "question": "家里养猫到处掉毛买啥扫地机合适",
+       "sequence": 2,
+       "user_scenario": "养宠物的家庭用户，面临严重的宠物毛发清理难题。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "价位推荐",
+       "competitor_brands": [
+        "石头",
+        "追觅",
+        "科沃斯",
+        "云鲸",
+        "米家",
+        "小米"
+       ],
+       "mention_context_quote": "首选品牌分需求（养猫优先排序）...石头（最推荐养猫家庭，均衡稳，贴边优秀）",
+       "mention_context_type": "normal",
+       "mention_description": "AI在3000元预算下将其排在首位，认为它最推荐养猫家庭，算法稳、贴边好、防缠毛均衡。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "追觅",
+        "科沃斯",
+        "云鲸",
+        "米家",
+        "小米"
+       ],
+       "mentioned_brands_count": 7,
+       "platform": "doubao",
+       "question": "三千块左右预算买扫地机选哪家",
+       "sequence": 3,
+       "user_scenario": "预算明确的消费者，想在中端价位段里挑产品。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "功能推荐",
+       "competitor_brands": [
+        "石头",
+        "科沃斯",
+        "小米",
+        "追觅",
+        "云鲸"
+       ],
+       "mention_context_quote": "自动洗抹布扫地机全推荐（适配养猫掉毛，按预算分档，重点对比石头）...养猫全能均衡首选",
+       "mention_context_type": "focus",
+       "mention_description": "AI在自动洗抹布的功能需求下，将其作为全能均衡首选重点推荐，并详细展开各价位型号介绍。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "科沃斯",
+        "小米",
+        "追觅",
+        "云鲸"
+       ],
+       "mentioned_brands_count": 6,
+       "platform": "doubao",
+       "question": "想要能自己洗抹布的扫地机买哪个",
+       "sequence": 4,
+       "user_scenario": "追求省心免手洗体验，看重特定自动化功能的用户。"
+      },
+      {
+       "ai_has_search": true,
+       "angle": "对比推荐",
+       "competitor_brands": [
+        "石头",
+        "石头科技",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家",
+        "小米"
+       ],
+       "mention_context_quote": "国产扫地机全品牌总结...石头科技（综合全能首选，养猫家庭口碑TOP）",
+       "mention_context_type": "normal",
+       "mention_description": "AI在国产对立中将其排在首位，称其为综合全能首选，优点是防缠毛成熟、导航稳定，缺点是基站体积偏大。",
+       "mention_position": 1,
+       "mentioned": true,
+       "mentioned_brands": [
+        "扫地机",
+        "石头",
+        "石头科技",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "米家",
+        "小米"
+       ],
+       "mentioned_brands_count": 8,
+       "platform": "doubao",
+       "question": "国产扫地机品牌里哪个最好用",
+       "sequence": 5,
+       "user_scenario": "倾向于支持国货，想在国内头部品牌中做挑选的用户。"
+      }
+     ],
+     "brand_avg_position": 1.3,
+     "brand_first_count": 16,
+     "brand_mention_rate": 96.7,
+     "brand_top3_count": 17,
+     "context_distribution": {
+      "brief": 10,
+      "focus": 9,
+      "normal": 10,
+      "not_mentioned": 1
+     },
+     "executive_summary": {
+      "key_findings": [
+       "致命的命名导致AI认知屏蔽：目标品牌（扫地机）被所有AI平台纯客观地解析为“产品品类词”，从而只推荐其他实体竞品，自身无法作为一个品牌被列出。",
+       "跨场景全方位缺席：无论是通用推荐、价位推荐还是功能场景推荐，头部位置已稳定被“石头、科沃斯、追觅、云鲸、小米”五大品牌垄断。",
+       "部分AI平台品牌认知长尾化：如GLM平台虽然列举了十几家品牌（含跨界家电），依然没有将目标品牌视为有效实体进行推荐，说明其在互联网公开语料中缺乏独立的品牌资产。"
+      ],
+      "overall_position": "目标品牌在AI推荐体系中的位置为0，由于品牌名与品类词完全重合且缺乏实体品牌特征，完全被主流AI引擎忽略。",
+      "priority_focus": [
+       "品牌实体化重塑：首要任务是解决品牌名与品类同质化的问题，必须在所有对外传播和内容沉淀中，极度强化品牌后缀（如“扫地机XXX品牌”）、创始人故事或独家专利，建立AI能识别的实体边界。",
+       "攻克GLM等宽口径平台：针对品牌多样性高的平台（如GLM会收录友望、大疆等），优先布局百科词条、企业资质背书及垂直类媒体的独立品牌报道，争取先进入长尾品牌库。",
+       "构建对比评测语料：围绕核心竞品（石头、追觅等），在各大内容平台生成“目标品牌 VS 石头”的差异化评测内容，引导AI大模型抓取并建立品牌关联。"
+      ]
+     },
+     "industry_keywords": [
+      "源构互联"
+     ],
+     "platform_summary": [
+      {
+       "avg_position": "1",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "yuanbao",
+       "top_competitors": [
+        "追觅",
+        "科沃斯",
+        "石头",
+        "云鲸",
+        "小米"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "3",
+       "mention_rate": "80.0",
+       "mentioned_count": 4,
+       "platform": "qianwen",
+       "top_competitors": [
+        "科沃斯",
+        "云鲸",
+        "追觅",
+        "米家",
+        "Mova"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "1",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "kimi",
+       "top_competitors": [
+        "科沃斯",
+        "石头",
+        "云鲸",
+        "追觅",
+        "米家"
+       ],
+       "total": 5
+      },
+      {
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "deepseek",
+       "top_competitors": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "米家",
+        "云鲸"
+       ],
+       "total": 5
+      },
+      {
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "glm",
+       "top_competitors": [
+        "石头",
+        "科沃斯",
+        "追觅",
+        "云鲸",
+        "小米"
+       ],
+       "total": 5
+      },
+      {
+       "avg_position": "1",
+       "mention_rate": "100.0",
+       "mentioned_count": 5,
+       "platform": "doubao",
+       "top_competitors": [
+        "石头",
+        "云鲸",
+        "科沃斯",
+        "追觅",
+        "小米"
+       ],
+       "total": 5
+      }
+     ],
+     "report_id": "pSXPA9eBQbq6WSzOaZ2tTw",
+     "status": "completed",
+     "task_id": 29,
+     "total_answers": 30
+    },
+    "status": 7,
+    "submit_time": "2026-07-26T22:32:18+08:00"
+   }
+  ],
+  "total": 3
+ }
+}

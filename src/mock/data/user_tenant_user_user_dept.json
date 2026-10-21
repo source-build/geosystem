@@ -1,0 +1,10 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "dept_id": 0,
+  "dept_name": "",
+  "tenant_id": "000000",
+  "tenant_name": "源构互联"
+ }
+}

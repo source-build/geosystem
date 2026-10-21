@@ -1,0 +1,17 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "id": 3,
+  "created_at": "0001-01-01T00:00:00Z",
+  "updated_at": "0001-01-01T00:00:00Z",
+  "deleted_at": null,
+  "user_id": 16,
+  "income": 104700,
+  "outcome": 18048.6,
+  "balance": 64591.4,
+  "freeze_amount": 22050,
+  "withdraw_amount": 0,
+  "version": 0
+ }
+}

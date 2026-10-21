@@ -1,0 +1,1086 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": [
+  {
+   "describe": "查询用户系统菜单列表",
+   "id": 17,
+   "name": "QueryUserSystemMenuList",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询系统角色Options",
+   "id": 18,
+   "name": "QuerySystemRoleOptions",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取系统内置角色列表",
+   "id": 19,
+   "name": "QuerySystemFixedRoles",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询部门列表",
+   "id": 24,
+   "name": "QueryDeptList",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取部门options",
+   "id": 25,
+   "name": "QueryDeptOptions",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑部门",
+   "id": 26,
+   "name": "EditDept",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "创建部门",
+   "id": 27,
+   "name": "CreateDept",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除部门",
+   "id": 28,
+   "name": "DeleteDept",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询部门成员列表",
+   "id": 29,
+   "name": "QueryDeptMemberList",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "向用户授权角色",
+   "id": 30,
+   "name": "DeptMemberGrantRole",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "取消用户授权角色",
+   "id": 31,
+   "name": "RevokeDeptMemberRole",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑部门成员",
+   "id": 32,
+   "name": "EditDeptMember",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "创建部门成员",
+   "id": 33,
+   "name": "CreateDeptMember",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除部门成员",
+   "id": 34,
+   "name": "DeleteDeptMember",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取未绑定部门的用户列表",
+   "id": 35,
+   "name": "QueryUnboundUserList",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "封禁部门成员账号",
+   "id": 36,
+   "name": "DeptMemberBan",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "解封部门成员账号",
+   "id": 37,
+   "name": "DeptMemberUnban",
+   "parent_id": 22,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取按钮权限列表",
+   "id": 38,
+   "name": "QueryUserButtons",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增菜单",
+   "id": 42,
+   "name": "AddMenu",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": " 编辑菜单",
+   "id": 43,
+   "name": "EditMenu",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除菜单",
+   "id": 44,
+   "name": "DelMenu",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "更新菜单排序",
+   "id": 45,
+   "name": "UpdateMenuNumber",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询所有菜单列表",
+   "id": 46,
+   "name": "QueryAllMenus",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "角色列表",
+   "id": 47,
+   "name": "QueryRoleList",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "角色树结构",
+   "id": 48,
+   "name": "QueryRoleTree",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "创建角色",
+   "id": 49,
+   "name": "CreateRole",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑角色",
+   "id": 50,
+   "name": "EditRole",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除角色",
+   "id": 51,
+   "name": "DeleteRole",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询资源Options",
+   "id": 52,
+   "name": "QueryResourceMappingOptions",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增角色权限",
+   "id": 53,
+   "name": "AddRoleAssignPermissions",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "字典列表",
+   "id": 54,
+   "name": "QueryDictList",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "字典值列表",
+   "id": 55,
+   "name": "QueryDictValueList",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "创建字典",
+   "id": 56,
+   "name": "AddDict",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑字典",
+   "id": 57,
+   "name": "EditDict",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除字典",
+   "id": 58,
+   "name": "DelDict",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询账户流水记录",
+   "id": 60,
+   "name": "QueryRecordList",
+   "parent_id": 59,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取账户信息",
+   "id": 61,
+   "name": "GetAccountInfo",
+   "parent_id": 59,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "修改租户余额",
+   "id": 65,
+   "name": "UpdateTenantAccountBalance",
+   "parent_id": 64,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询租户账户列表",
+   "id": 66,
+   "name": "QueryTenantAccountList",
+   "parent_id": 64,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询设备列表",
+   "id": 68,
+   "name": "QueryDeviceList",
+   "parent_id": 67,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询设备详情",
+   "id": 69,
+   "name": "QueryDeviceDetail",
+   "parent_id": 67,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增设备",
+   "id": 70,
+   "name": "AddDevice",
+   "parent_id": 67,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "更新设备信息",
+   "id": 71,
+   "name": "UpdateDevice",
+   "parent_id": 67,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除设备",
+   "id": 72,
+   "name": "DeleteDevice",
+   "parent_id": 67,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "SSE连接",
+   "id": 74,
+   "name": "SseConnect",
+   "parent_id": 73,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "更新定价",
+   "id": 77,
+   "name": "UpdateTenantPricing",
+   "parent_id": 76,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询定价详情",
+   "id": 78,
+   "name": "QueryTenantPricing",
+   "parent_id": 76,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询系统定价",
+   "id": 79,
+   "name": "QuerySystemPricing",
+   "parent_id": 76,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询租户普通用户列表",
+   "id": 83,
+   "name": "QueryTenantUserList",
+   "parent_id": 82,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑租户普通用户",
+   "id": 84,
+   "name": "EditTenantUser",
+   "parent_id": 82,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "创建租户普通用户",
+   "id": 85,
+   "name": "CreateTenantUser",
+   "parent_id": 82,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除租户普通用户",
+   "id": 86,
+   "name": "DelTenantUser",
+   "parent_id": 82,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "租户用户管理(通配符匹配)",
+   "id": 87,
+   "name": "TenantUserManage",
+   "parent_id": 82,
+   "risk_level": 1,
+   "type": 2
+  },
+  {
+   "describe": "生成AI诊断任务",
+   "id": 88,
+   "name": "CreateAIDiagnoseTask",
+   "parent_id": 81,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询用户账户信息",
+   "id": 92,
+   "name": "QueryTenantUserAccount",
+   "parent_id": 91,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询用户账户流水记录",
+   "id": 93,
+   "name": "QueryTenantUserAccountRecord",
+   "parent_id": 91,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "租户为用户账户充值",
+   "id": 94,
+   "name": "UserAccountRecharg",
+   "parent_id": 91,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询用户账户信息",
+   "id": 95,
+   "name": "GetTenantUserAccountInfo",
+   "parent_id": 96,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "用户业务下的根通配符",
+   "id": 98,
+   "name": "TenantUserWildcard",
+   "parent_id": 97,
+   "risk_level": 1,
+   "type": 2
+  },
+  {
+   "describe": "\t\nGEO业务下的根通配符",
+   "id": 99,
+   "name": "GeoTenantUserWildcard",
+   "parent_id": 97,
+   "risk_level": 1,
+   "type": 2
+  },
+  {
+   "describe": "查询卡密列表",
+   "id": 101,
+   "name": "QueryRedemptionCodeList",
+   "parent_id": 100,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "生成卡密",
+   "id": 102,
+   "name": "AddRedemptionCode",
+   "parent_id": 100,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除卡密",
+   "id": 103,
+   "name": "DelRedemptionCode",
+   "parent_id": 100,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询云空间目录列表",
+   "id": 105,
+   "name": "QueryCloudFolderList",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取云空间目录树",
+   "id": 106,
+   "name": "GetCloudFolderTree",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "更新云空间目录",
+   "id": 107,
+   "name": "EditCloudFolder",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增云空间目录",
+   "id": 108,
+   "name": "AddCloudFolder",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除云空间目录",
+   "id": 109,
+   "name": "DelCloudFolder",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取云空间文件上传凭证",
+   "id": 110,
+   "name": "GetCloudFileCredential",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取云空间文件列表",
+   "id": 111,
+   "name": "QueryCloudFileList",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "保存云空间文件记录到系统",
+   "id": 112,
+   "name": "SaveCloudFile",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除云空间资源",
+   "id": 113,
+   "name": "DelCloudFile",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询云空间信息",
+   "id": 114,
+   "name": "QueryCloudSpace",
+   "parent_id": 104,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增投稿媒体",
+   "id": 116,
+   "name": "CreateSubmissionMedia",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询投稿媒体列表(分页)",
+   "id": 117,
+   "name": "SubmissionMediaList",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取投稿媒体详情",
+   "id": 118,
+   "name": "GetSubmissionMedia",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑投稿媒体",
+   "id": 119,
+   "name": "EditSubmissionMedia",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除投稿媒体",
+   "id": 120,
+   "name": "DeleteSubmissionMedia",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增投稿筛选项",
+   "id": 121,
+   "name": "CreateSubmissionOption",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询投稿筛选项列表(分页)",
+   "id": 122,
+   "name": "SubmissionOptionList",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询全部启用选项列表",
+   "id": 123,
+   "name": "SubmissionOptionAll",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取投稿筛选项详情",
+   "id": 124,
+   "name": "GetSubmissionOption",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑投稿筛选项",
+   "id": 125,
+   "name": "EditSubmissionOption",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除投稿筛选项",
+   "id": 126,
+   "name": "DeleteSubmissionOption",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "租户GEO全部业务",
+   "id": 128,
+   "name": "tenantGeoBusiness",
+   "parent_id": 127,
+   "risk_level": 1,
+   "type": 2
+  },
+  {
+   "describe": "切换投稿媒体状态",
+   "id": 129,
+   "name": "ToggleSubmissionMediaStatus",
+   "parent_id": 115,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "GEO业务模块租户成员权限集",
+   "id": 132,
+   "name": "GeoTenantMemberPermission",
+   "parent_id": 131,
+   "risk_level": 1,
+   "type": 2
+  },
+  {
+   "describe": "查询用户所属租户与部门",
+   "id": 133,
+   "name": "QueryTenantUserDept",
+   "parent_id": 16,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增账号密码",
+   "id": 134,
+   "name": "CreateAccountPassword",
+   "parent_id": 127,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑账号密码",
+   "id": 135,
+   "name": "EditAccountPassword",
+   "parent_id": 127,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除账号密码",
+   "id": 136,
+   "name": "DeleteAccountPassword",
+   "parent_id": 127,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询账号密码详情",
+   "id": 137,
+   "name": "GetAccountPassword",
+   "parent_id": 127,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询账号密码列表",
+   "id": 138,
+   "name": "AccountPasswordList",
+   "parent_id": 127,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "意境AI租户权限泛集",
+   "id": 142,
+   "name": "AicreationTenantSet",
+   "parent_id": 140,
+   "risk_level": 1,
+   "type": 2
+  },
+  {
+   "describe": "新增渠道",
+   "id": 143,
+   "name": "AddProvider",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "批量查询渠道余额",
+   "id": 144,
+   "name": "BatchQeuryProviderBalance",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑渠道",
+   "id": 145,
+   "name": "EditProvider",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "切换渠道状态",
+   "id": 146,
+   "name": "UpdateProviderStatus",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除渠道",
+   "id": 147,
+   "name": "DelProvider",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询渠道列表",
+   "id": 148,
+   "name": "QeuryProviderList",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取渠道详情",
+   "id": 149,
+   "name": "QeuryProviderDetail",
+   "parent_id": 150,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增模型",
+   "id": 152,
+   "name": "AddModel",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑模型",
+   "id": 153,
+   "name": "EditModel",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "切换模型状态",
+   "id": 154,
+   "name": "UpdateModelStatus",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除模型",
+   "id": 155,
+   "name": "DelModel",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询模型列表",
+   "id": 156,
+   "name": "QueryModelList",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取模型详情",
+   "id": 157,
+   "name": "QueryModelDetail",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增映射",
+   "id": 158,
+   "name": "AddModelProvider",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑映射",
+   "id": 159,
+   "name": "EditModelProvider",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "切换映射启用",
+   "id": 160,
+   "name": "SwitchModelProviderStatus",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除映射",
+   "id": 161,
+   "name": "DelModelProvider",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询映射列表",
+   "id": 162,
+   "name": "QueryModelProvider",
+   "parent_id": 151,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增功能",
+   "id": 164,
+   "name": "AddModule",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑功能",
+   "id": 165,
+   "name": "EditModule",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "切换功能状态",
+   "id": 166,
+   "name": "UpdateModuleStatus",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除功能",
+   "id": 167,
+   "name": "DelModule",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询功能列表",
+   "id": 168,
+   "name": "QueryModuleList",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取功能详情",
+   "id": 169,
+   "name": "QueryModuleDetail",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增白名单",
+   "id": 170,
+   "name": "AddModuleModel",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑白名单",
+   "id": 171,
+   "name": "EditModuleModel",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除白名单",
+   "id": 172,
+   "name": "DelModuleModel",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询白名单列表",
+   "id": 173,
+   "name": "QeuryModuleModelList",
+   "parent_id": 163,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增租户定价配置",
+   "id": 175,
+   "name": "AddTenant",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑租户定价配置",
+   "id": 176,
+   "name": "EditTenant",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除",
+   "id": 177,
+   "name": "DelTenant",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "切换状态(禁用=回退系统价)",
+   "id": 178,
+   "name": "UpdateTenantStatus",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取详情",
+   "id": 179,
+   "name": "QueryTenantDetail",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询列表",
+   "id": 180,
+   "name": "QueryTenantList",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "新增倍率覆盖",
+   "id": 181,
+   "name": "AddTenantModelPrice",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "编辑倍率覆盖",
+   "id": 182,
+   "name": "EditTenantModelPrice",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "删除倍率覆盖",
+   "id": 183,
+   "name": "DelTenantModelPrice",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "查询列表",
+   "id": 184,
+   "name": "QueryTenantModelPrice",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取详情",
+   "id": 185,
+   "name": "QueryTenantModelPriceDetail",
+   "parent_id": 174,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "获取租户列表",
+   "id": 186,
+   "name": "GetTenantList",
+   "parent_id": 64,
+   "risk_level": 0,
+   "type": 2
+  },
+  {
+   "describe": "意境AI租户用户权限泛集",
+   "id": 188,
+   "name": "AicreationTenantUserSet",
+   "parent_id": 187,
+   "risk_level": 1,
+   "type": 2
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "rows": [
+   {
+    "account_count": 2,
+    "address": "云南省昆明市西山区",
+    "auths": "[{\"identifier\": \"18888888888\", \"identity_type\": \"TENANT\"}]",
+    "company_name": "云南镇国天下科技有限公司",
+    "contact_phone": "18888888888",
+    "contact_user_name": "演示用户",
+    "created_at": "2026-04-23T17:58:01.547+08:00",
+    "domain": "",
+    "expire_time": "2026-08-22T08:00:00+08:00",
+    "id": 2,
+    "remark": "",
+    "status": 0,
+    "tenant_id": "111111",
+    "tenant_name": "镇国天下",
+    "user_id": 12
+   },
+   {
+    "account_count": 0,
+    "address": "云南省昆明市官渡区",
+    "auths": "[{\"identifier\": \"13666666666\", \"identity_type\": \"TENANT\"}]",
+    "company_name": "昆明源构互联科技有限公司",
+    "contact_phone": "13666666666",
+    "contact_user_name": "顾大爷",
+    "created_at": "2025-11-20T23:09:57.566+08:00",
+    "domain": "",
+    "expire_time": null,
+    "id": 1,
+    "remark": "",
+    "status": 0,
+    "tenant_id": "000000",
+    "tenant_name": "源构互联",
+    "user_id": 2
+   }
+  ],
+  "total": 2
+ }
+}

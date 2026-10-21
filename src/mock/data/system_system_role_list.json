@@ -1,0 +1,90 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": [
+  {
+   "alias": "user",
+   "created_at": "2025-03-20T02:10:59.444+08:00",
+   "deleted_at": null,
+   "describe": "",
+   "id": 9,
+   "label": "用户",
+   "number": 1,
+   "parent_id": 0,
+   "role_type": 1,
+   "status": 1,
+   "type": 1,
+   "updated_at": "2025-03-20T02:11:06.955+08:00"
+  },
+  {
+   "alias": "tenant",
+   "created_at": "2025-03-22T01:31:49.894+08:00",
+   "deleted_at": null,
+   "describe": "",
+   "id": 10,
+   "label": "租户",
+   "number": 1,
+   "parent_id": 0,
+   "role_type": 1,
+   "status": 1,
+   "type": 1,
+   "updated_at": "2025-03-22T01:32:01.201+08:00"
+  },
+  {
+   "alias": "admUser",
+   "created_at": "2026-04-24T13:34:01.22+08:00",
+   "deleted_at": null,
+   "describe": "拥有登录管理后台的能力，不具备任何业务能力，仅作为基础角色",
+   "id": 33,
+   "label": "管理端人员",
+   "number": 1,
+   "parent_id": 0,
+   "role_type": 1,
+   "status": 1,
+   "type": 1,
+   "updated_at": "2026-04-24T13:34:01.22+08:00"
+  },
+  {
+   "alias": "superTenant",
+   "created_at": "2026-04-29T23:54:02.718+08:00",
+   "deleted_at": null,
+   "describe": "",
+   "id": 34,
+   "label": "总租户",
+   "number": 1,
+   "parent_id": 0,
+   "role_type": 1,
+   "status": 1,
+   "type": 1,
+   "updated_at": "2026-04-29T23:54:02.718+08:00"
+  },
+  {
+   "alias": "tu",
+   "created_at": "2026-05-21T17:20:25.89+08:00",
+   "deleted_at": null,
+   "describe": "租户下的用户，由所属租户控制注册、删除操作等",
+   "id": 40,
+   "label": "租户用户",
+   "number": 1,
+   "parent_id": 0,
+   "role_type": 1,
+   "status": 1,
+   "type": 1,
+   "updated_at": "2026-05-21T17:20:25.89+08:00"
+  },
+  {
+   "alias": "SubmissionMedia",
+   "created_at": "2026-07-17T14:48:38.59+08:00",
+   "deleted_at": null,
+   "describe": "",
+   "id": 43,
+   "label": "媒体投稿人员",
+   "number": 1,
+   "parent_id": 33,
+   "role_type": 1,
+   "status": 1,
+   "type": 1,
+   "updated_at": "2026-07-17T14:48:38.59+08:00"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "code": 0,
+ "msg": "查询成功",
+ "result": {
+  "rows": [
+   {
+    "avatar": "",
+    "id": 19,
+    "nick_name": "黄DJ"
+   },
+   {
+    "avatar": "",
+    "id": 17,
+    "nick_name": "dj"
+   },
+   {
+    "avatar": "",
+    "id": 16,
+    "nick_name": "用户_8413116"
+   },
+   {
+    "avatar": "",
+    "id": 15,
+    "nick_name": "演示用户"
+   },
+   {
+    "avatar": "",
+    "id": 13,
+    "nick_name": "卢大哥"
+   },
+   {
+    "avatar": "",
+    "id": 12,
+    "nick_name": "镇国天下"
+   },
+   {
+    "avatar": "",
+    "id": 2,
+    "nick_name": "源构互联"
+   },
+   {
+    "avatar": "",
+    "id": 1,
+    "nick_name": "超级管理员"
+   }
+  ],
+  "total": 8
+ }
+}
